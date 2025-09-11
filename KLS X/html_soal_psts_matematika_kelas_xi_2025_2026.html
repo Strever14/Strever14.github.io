@@ -404,5 +404,46 @@
       <button type="submit" style="padding:10px 14px;border-radius:10px;border:1px solid #0ea5e9;background:#e0f2fe">Simpan (tidak mengirim)</button>
     </footer>
   </form>
+
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  function shuffle(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  // Ambil semua soal pilihan ganda
+  const questionList = document.querySelectorAll("ol.questions")[0];
+  const questions = Array.from(questionList.querySelectorAll("li"));
+
+  // Acak isi soal (pertanyaan + opsi) tetapi urutan nomor tetap
+  const shuffled = shuffle([...questions.map(q => q.cloneNode(true))]);
+
+  questions.forEach((q, idx) => {
+    const newQ = shuffled[idx];
+
+    // Ganti teks pertanyaan
+    q.querySelector(".qtext").innerHTML = newQ.querySelector(".qtext").innerHTML;
+
+    // Ambil dan acak opsi jawaban
+    const opts = Array.from(newQ.querySelectorAll(".choices label"));
+    const shuffledOpts = shuffle(opts);
+    const oldChoices = q.querySelector(".choices");
+    oldChoices.innerHTML = "";
+    shuffledOpts.forEach((opt, i) => {
+      // ubah label A-E sesuai urutan
+      const letter = String.fromCharCode(65 + i);
+      const input = opt.querySelector("input");
+      input.value = letter;
+      opt.innerHTML = `<input type="radio" name="q${idx+1}" /> ${letter}. ${opt.textContent.slice(3)}`;
+      oldChoices.appendChild(opt);
+    });
+  });
+});
+</script>
+
 </body>
 </html>

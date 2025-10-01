@@ -1,0 +1,13 @@
+{
+  "pilihan_ganda": [
+    {
+      "pertanyaan": "Hasil dari 12 × 15 adalah...",
+      "opsi": ["120", "140", "160", "180", "200"],
+      "jawaban": "180"
+    }
+  ],
+  "essay": [
+    { "pertanyaan": "Jelaskan rumus luas lingkaran" },
+    { "pertanyaan": "Buat contoh soal persamaan linear dan selesaikan" }
+  ]
+}

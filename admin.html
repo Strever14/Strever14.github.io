@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Token & Jadwal</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: linear-gradient(135deg,#ff9966,#ff5e62);
+      margin:0; padding:20px; color:#fff; }
+    h1 { text-align:center; }
+    .card { background: rgba(0,0,0,0.3); padding:20px; border-radius:10px; margin:20px auto; max-width:600px; }
+    .token { font-size:24px; font-weight:bold; color:#ffd700; }
+    .countdown { color:#90ee90; margin-top:10px; }
+    select { margin:5px; padding:5px; }
+    label { display:block; margin:8px 0; }
+    button { margin-top:15px; padding:10px 20px; cursor:pointer; border:none; border-radius:5px; background:#333; color:#fff; }
+    button:hover { background:#222; }
+  </style>
+</head>
+<body>
+  <h1>🔑 Admin Panel</h1>
+
+  <!-- Bagian Token -->
+  <div class="card">
+    <h2>Token Website 1</h2>
+    <p id="token1" class="token"></p>
+    <h2>Token Website 2</h2>
+    <p id="token2" class="token"></p>
+    <p id="countdown" class="countdown"></p>
+  </div>
+
+  <!-- Bagian Jadwal -->
+  <div class="card">
+    <h2>📅 Pengaturan Jadwal Website 1</h2>
+    <div id="site1"></div>
+  </div>
+  <div class="card">
+    <h2>📅 Pengaturan Jadwal Website 2</h2>
+    <div id="site2"></div>
+  </div>
+  <div style="text-align:center">
+    <button onclick="downloadJadwal()">💾 Simpan Jadwal</button>
+  </div>
+
+  <script>
+    /* ==================== BAGIAN TOKEN ==================== */
+    function generateToken(site) {
+      let now = Math.floor(Date.now() / (1000 * 60 * 5));
+      let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      let token = "";
+      for (let i = 0; i < 5; i++) {
+        let index = (now + i * (site === 1 ? 7 : 11)) % chars.length;
+        token += chars[index];
+      }
+      return token;
+    }
+
+    function updateTokens() {
+      document.getElementById("token1").innerText = generateToken(1);
+      document.getElementById("token2").innerText = generateToken(2);
+
+      let now = Date.now();
+      let nextChange = Math.ceil(now / (1000*60*5)) * (1000*60*5);
+      let remaining = nextChange - now;
+      let minutes = Math.floor(remaining / 60000);
+      let seconds = Math.floor((remaining % 60000) / 1000);
+
+      document.getElementById("countdown").innerText =
+        "Token baru dalam: " + minutes + " menit " + seconds + " detik";
+    }
+    setInterval(updateTokens, 1000);
+    updateTokens();
+
+    /* ==================== BAGIAN JADWAL ==================== */
+    const mapel = [
+      "bahasa_indonesia", "bahasa_inggris", "matematika", "sejarah",
+      "fisika", "kimia", "ekonomi", "ppkn", "sosiologi"
+    ];
+    const hariList = {1:"Senin",2:"Selasa",3:"Rabu",4:"Kamis",5:"Jumat"};
+
+    function renderForm(siteId, containerId){
+      let html = "";
+      for (let i=1; i<=5; i++){
+        html += `<label>${hariList[i]}:
+          <select id="${siteId}_${i}">
+            ${mapel.map(m => `<option value="${m}">${m.replace("_"," ")}</option>`).join("")}
+          </select></label>`;
+      }
+      document.getElementById(containerId).innerHTML = html;
+    }
+
+    renderForm("site1", "site1");
+    renderForm("site2", "site2");
+
+    function downloadJadwal(){
+      let jadwal = {site1:{}, site2:{}};
+      for (let i=1; i<=5; i++){
+        jadwal.site1[i] = document.getElementById(`site1_${i}`).value;
+        jadwal.site2[i] = document.getElementById(`site2_${i}`).value;
+      }
+      let blob = new Blob([JSON.stringify(jadwal, null, 2)], {type:"application/json"});
+      let link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "jadwal.json";
+      link.click();
+    }
+  </script>
+</body>
+</html>

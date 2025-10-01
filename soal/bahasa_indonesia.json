@@ -1,0 +1,18 @@
+{
+  "pilihan_ganda": [
+    {
+      "pertanyaan": "Apa sinonim kata 'Indah'?",
+      "opsi": ["Cantik", "Buruk", "Kotor", "Jelek", "Biasa"],
+      "jawaban": "Cantik"
+    },
+    {
+      "pertanyaan": "Manakah yang termasuk majas?",
+      "opsi": ["Personifikasi", "Pythagoras", "Newton", "Integral", "Atom"],
+      "jawaban": "Personifikasi"
+    }
+  ],
+  "essay": [
+    { "pertanyaan": "Tuliskan contoh kalimat menggunakan majas personifikasi!" },
+    { "pertanyaan": "Apa perbedaan paragraf deduktif dan induktif?" }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "pilihan_ganda": [
+    {
+      "pertanyaan": "Hasil dari 12 × 15 adalah... <br><img src='soal/img/matematika/g1.png' alt='grafik' width='300'><br>",
+      "gambar": "images/g1.png",
+      "opsi": ["120", "140", "160", "180", "200"],
+      "jawaban": "images/g1.png"
+    }
+  ],
+  "essay": [
+    { "pertanyaan": "Jelaskan rumus luas lingkaran" },
+    { "pertanyaan": "Buat contoh soal persamaan linear dan selesaikan" }
+  ]
+}

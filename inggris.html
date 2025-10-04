@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRY OUT KE II - BAHASA INGGRIS 2025</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --success: #2ecc71;
+            --warning: #f39c12;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: var(--shadow);
+            border-radius: 10px;
+            position: relative;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: var(--shadow);
+        }
+        
+        .header h1 {
+            margin-bottom: 5px;
+            font-size: 24px;
+        }
+        
+        .header h2 {
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: normal;
+        }
+        
+        .info-card {
+            background-color: var(--light);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 25px;
+            box-shadow: var(--shadow);
+        }
+        
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .info-table td {
+            padding: 8px 10px;
+            border-bottom: 1px dashed #bdc3c7;
+        }
+        
+        .info-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .section-title {
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 15px;
+            border-radius: 6px;
+            margin: 30px 0 15px;
+            font-size: 18px;
+            box-shadow: var(--shadow);
+        }
+        
+        .part-title {
+            background-color: var(--secondary);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin: 25px 0 10px;
+            font-size: 16px;
+        }
+        
+        .question-title {
+            font-weight: bold;
+            margin: 20px 0 10px;
+            color: var(--dark);
+            font-size: 15px;
+        }
+        
+        .question {
+            background-color: white;
+            border-left: 4px solid var(--secondary);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 0 6px 6px 0;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s;
+            position: relative;
+        }
+        
+        .question:hover {
+            transform: translateY(-2px);
+        }
+        
+        .question-number {
+            font-weight: bold;
+            color: var(--accent);
+            margin-right: 5px;
+            background: #f8f9fa;
+            padding: 2px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        
+        .options {
+            margin-top: 10px;
+        }
+        
+        .option {
+            margin-bottom: 8px;
+            padding: 8px 10px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+            display: flex;
+            align-items: center;
+        }
+        
+        .option:hover {
+            background-color: #f0f8ff;
+        }
+        
+        .option input {
+            margin-right: 10px;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 15px 0;
+        }
+        
+        .question-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: var(--shadow);
+            border: 1px solid #ddd;
+            max-height: 300px;
+        }
+        
+        .dialogue-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            box-shadow: var(--shadow);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .dialogue-table td {
+            border: 1px solid #ddd;
+            padding: 10px 15px;
+            vertical-align: top;
+        }
+        
+        .speaker {
+            font-weight: bold;
+            width: 25%;
+            background-color: #f1f8ff;
+        }
+        
+        .essay-section {
+            margin-top: 40px;
+            border-top: 3px solid var(--primary);
+            padding-top: 25px;
+        }
+        
+        .essay-question {
+            background-color: #fff9e6;
+            border-left: 4px solid var(--warning);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 0 6px 6px 0;
+            box-shadow: var(--shadow);
+        }
+        
+        .text-indent {
+            margin-left: 20px;
+        }
+        
+        .instruction-box {
+            background-color: #e8f4fc;
+            border-left: 4px solid var(--secondary);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        
+        .example-box {
+            background-color: #f0f7f0;
+            border-left: 4px solid var(--success);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        
+        .progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: #f1f1f1;
+            z-index: 1000;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(to right, var(--secondary), var(--accent));
+            width: 0%;
+            transition: width 0.3s;
+        }
+        
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding: 15px 0;
+            border-top: 1px solid #ddd;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            box-shadow: var(--shadow);
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+        
+        .btn-submit {
+            background-color: var(--success);
+            display: block;
+            margin: 20px auto;
+            padding: 12px 30px;
+            font-size: 18px;
+        }
+        
+        .btn-submit:hover {
+            background-color: #27ae60;
+        }
+        
+        .audio-player {
+            background-color: var(--light);
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        
+        .audio-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        
+        audio {
+            width: 100%;
+            max-width: 500px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+                margin: 10px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .header h2 {
+                font-size: 16px;
+            }
+            
+            .question {
+                padding: 12px;
+            }
+            
+            .dialogue-table td {
+                padding: 8px 10px;
+                display: block;
+                width: 100%;
+            }
+            
+            .speaker {
+                width: 100%;
+                border-bottom: none;
+            }
+            
+            .btn {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 16px;
+                padding: 10px;
+            }
+            
+            .part-title {
+                font-size: 14px;
+                padding: 8px 10px;
+            }
+            
+            .question-title {
+                font-size: 14px;
+            }
+            
+            body {
+                padding: 5px;
+            }
+        }
+        
+        .highlight {
+            background-color: #fffacd;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        .timer {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50px;
+            box-shadow: var(--shadow);
+            font-weight: bold;
+            z-index: 100;
+        }
+        
+        .audio-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .audio-btn {
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: var(--shadow);
+        }
+        
+        .audio-btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.1);
+        }
+        
+        .question-counter {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: var(--accent);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        
+        .nav-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        
+        .nav-btn:hover {
+            background: var(--secondary);
+            transform: scale(1.1);
+        }
+        
+        .question-text {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>TRY OUT KE II</h1>
+            <h2>SMK ITIKURIH HIBARNA TAHUN</h2>
+            <h2>AJARAN 2025/2026</h2>
+        </div>
+        
+        <div class="info-card">
+            <table class="info-table">
+                <tr>
+                    <td><strong>Mata Pelajaran</strong></td>
+                    <td><strong>Bahasa Inggris</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Kelas</strong></td>
+                    <td><strong>XII TJKT/AKL</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Waktu</strong></td>
+                    <td><strong>120 Menit</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Nama Guru</strong></td>
+                    <td>Ima Hanipah, S.Pd.</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="audio-player">
+            <div class="audio-title">LISTENING SECTION AUDIO</div>
+            <audio id="listeningAudio" controls>
+                <source src="soal/audio/ing/LISTENING_TO_2.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung pemutar audio.
+            </audio>
+            <div class="audio-controls">
+                <button class="audio-btn" onclick="playAudio()">▶</button>
+                <button class="audio-btn" onclick="pauseAudio()">⏸</button>
+                <button class="audio-btn" onclick="restartAudio()">⏮</button>
+            </div>
+        </div>
+        
+        <div class="section-title" id="listening">A. LISTENING SECTION</div>
+        
+        <!-- PART I: Pictures (Soal 1-3) -->
+        <div class="part-title">PART I. Pictures</div>
+        <div class="question-title">Question : 1 to 3</div>
+        
+        <div class="instruction-box">
+            <p><strong>Directions:</strong> For each item, there is a picture in your test book and four short statements about it on the tape. They will be spoken TWICE, and are not WRITTEN in your test book, so you must listen to them carefully. You must choose one statement A,B,C, or D that best describes the picture. Then on your answer sheet, mark your choice.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="soal/img/ing/g1.jpg" alt="Picture for question" class="question-image">
+        </div>
+        
+        <p><strong>Now listen to the following statements</strong></p>
+        
+        <div class="options">
+            <div class="option"><input type="radio" name="sample" disabled> A. The children are looking at each other</div>
+            <div class="option"><input type="radio" name="sample" checked disabled> B. The children are brushing their teeth</div>
+            <div class="option"><input type="radio" name="sample" disabled> C. The children are holding something in their left hand</div>
+            <div class="option"><input type="radio" name="sample" disabled> D. The children are about to comb their hair</div>
+        </div>
+        
+        <div class="example-box">
+            <p>Choice (B), "They children are brushing their teeth," best describes what you see in the picture. Therefore, you should mark answer (B) on your answer sheet</p>
+        </div>
+        
+        
+        <div class="question">
+            <div class="question-number">1.</div>
+            <div class="question-counter">Listening</div>
+            <div class="image-container">
+                <img src="soal/img/ing/g2.jpg" alt="Picture for question 1" class="question-image">
+            </div>
+        </div>
+        
+        <div class="question">
+            <div class="question-number">2.</div>
+            <div class="question-counter">Listening</div>
+            <div class="image-container">
+                <img src="soal/img/ing/g3.jpg" alt="Picture for question 2" class="question-image">
+            </div>
+        </div>
+        
+        <div class="question">
+            <div class="question-number">3.</div>
+            <div class="question-counter">Listening</div>
+            <div class="image-container">
+                <img src="soal/img/ing/g4.jpg" alt="Picture for question 3" class="question-image">
+            </div>
+        </div>
+        
+        <!-- PART II: Question-Responses (Soal 4-7) -->
+        <div class="part-title">PART II. Question - Responses</div>
+        <div class="question-title">Question 4 to 7</div>
+        
+        <div class="instruction-box">
+            <p><strong>Directions:</strong> In this part of the test, you will hear several questions spoken in English, followed by four responses, also spoken in English. The questions and the responses will be spoken TWICE. They will not be printed in your test book, so you must listen to them carefully to understand what the speakers say. You have to choose the best response to each question.</p>
+        </div>
+        
+        <div class="question">
+            <div class="question-number">4.</div>
+            <div class="question-counter">Listening</div>
+            <p>Mark your answer on your answer sheet.</p>
+        </div>
+        
+        <div class="question">
+            <div class="question-number">5.</div>
+            <div class="question-counter">Listening</div>
+            <p>Mark your answer on your answer sheet.</p>
+        </div>
+        
+        <div class="question">
+            <div class="question-number">6.</div>
+            <div class="question-counter">Listening</div>
+            <p>Mark your answer on your answer sheet.</p>
+        </div>
+        
+        <div class="question">
+            <div class="question-number">7.</div>
+            <div class="question-counter">Listening</div>
+            <p>Mark your answer on your answer sheet.</p>
+        </div>
+        
+        <!-- PART III: Short Conversation (Soal 8-11) -->
+        <div class="part-title">PART III. Short Conversation</div>
+        <div class="question-title">Question 8 to 11</div>
+        
+        <div class="instruction-box">
+            <p><strong>Directions:</strong> In this section of the test, you will hear several short conversations. You will hear the conversations only TWICE. The conversations will not be printed in your test book, so you must listen carefully to understand what the speakers say.</p>
+        </div>
+        
+        <div class="question">
+            <div class="question-number">8.</div>
+            <div class="question-counter">Listening</div>
+            <p>What does the woman say about the musical?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q8"> (A) She says she doesn't want to go</div>
+                <div class="option"><input type="radio" name="q8"> (B) She says she might enjoy it</div>
+                <div class="option"><input type="radio" name="q8"> (C) She says the man might enjoy it</div>
+                <div class="option"><input type="radio" name="q8"> (D) She says she wants to book a seat for him</div>
+            </div>
+        </div>
+        
+        <div class="question">
+            <div class="question-number">9.</div>
+            <div class="question-counter">Listening</div>
+            <p>What is the TRUE about the man?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q9"> (A) He thinks he is a great singer</div>
+                <div class="option"><input type="radio" name="q9"> (B) He didn't like the woman's voice</div>
+                <div class="option"><input type="radio" name="q9"> (C) He was at karaoke place two nights ago</div>
+                <div class="option"><input type="radio" name="q9"> (D) He really likes the woman's voice</div>
+            </div>
+        </div>
+        
+        <div class="question">
+            <div class="question-number">10.</div>
+            <div class="question-counter">Listening</div>
+            <p>What is the woman's opinion about the man?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q10"> (A) She thinks he should exercise more</div>
+                <div class="option"><input type="radio" name="q10"> (B) She thinks he looks healthy</div>
+                <div class="option"><input type="radio" name="q10"> (C) He needs to take her out sometime</div>
+                <div class="option"><input type="radio" name="q10"> (D) He absolutely handsome</div>
+            </div>
+        </div>
+        
+        <div class="question">
+            <div class="question-number">11.</div>
+            <div class="question-counter">Listening</div>
+            <p>Why should the woman join the yoga class this month?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q11"> (A) There is the discount</div>
+                <div class="option"><input type="radio" name="q11"> (B) Her friend is joining</div>
+                <div class="option"><input type="radio" name="q11"> (C) A new class is starting</div>
+                <div class="option"><input type="radio" name="q11"> (D) She knows the instructor</div>
+            </div>
+        </div>
+        
+        <!-- PART IV: Short Monologs (Soal 12-15) -->
+        <div class="part-title">PART IV. Short Monologs</div>
+        <div class="question-title">Question 12 to 15</div>
+        
+        <div class="instruction-box">
+            <p><strong>Directions:</strong> In this part of the test, you will hear several short monologs. Each will be spoken TWICE. They will not be printed in your test book, so you must listen to them carefully to understand and remember what is said.</p>
+        </div>
+        
+        <div class="question">
+            <div class="question-number">12.</div>
+            <div class="question-counter">Listening</div>
+            <p>Why is the school closing early?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q12"> (A) The bus driver will go home early</div>
+                <div class="option"><input type="radio" name="q12"> (B) The students will play in the multifunction room</div>
+                <div class="option"><input type="radio" name="q12"> (C) The weather is extremely bad</div>
+                <div class="option"><input type="radio" name="q12"> (D) The students are going on a trip</div>
+            </div>
+        </div>
+        
+        <div class="question">
+            <div class="question-number">13.</div>
+            <div class="question-counter">Listening</div>
+            <p>What day is the announcement taking place?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q13"> (A) Friday</div>
+                <div class="option"><input type="radio" name="q13"> (B) Thursday</div>
+                <div class="option"><input type="radio" name="q13"> (C) Tuesday</div>
+                <div class="option"><input type="radio" name="q13"> (D) Monday</div>
+            </div>
+        </div>
+        
+        <div class="question">
+            <div class="question-number">14.</div>
+            <div class="question-counter">Listening</div>
+            <p>Who is talking?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q14"> (A) A news reporter</div>
+                <div class="option"><input type="radio" name="q14"> (B) A weather forecaster</div>
+                <div class="option"><input type="radio" name="q14"> (C) A travel agent</div>
+                <div class="option"><input type="radio" name="q14"> (D) A pilot</div>
+            </div>
+        </div>
+        
+        <div class="question">
+            <div class="question-number">15.</div>
+            <div class="question-counter">Listening</div>
+            <p>When is the speaker talking?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q15"> (A) In the early morning</div>
+                <div class="option"><input type="radio" name="q15"> (B) At noon</div>
+                <div class="option"><input type="radio" name="q15"> (C) In the evening</div>
+                <div class="option"><input type="radio" name="q15"> (D) Late at night</div>
+            </div>
+        </div>
+        
+        <!-- READING SECTION (Soal 16-40) -->
+        <div class="section-title" id="reading">B. READING SECTION</div>
+        
+        <!-- Soal 16-17: Text about Yogyakarta -->
+        <div class="question">
+            <div class="question-number">Text for questions 16 - 17</div>
+            <div class="question-text">
+                <p>Yogyakarta is one of the foremost cultural centers of Java, the seat of the mighty Javanese empire of Mataram from which present day. Yogyakarta has the best inherited of traditions. The city itself has a special charm, which seldom fails to captivate the visitor. Gamelan, classical and contemporary Javanese dances, leather puppet, theater and other expressions of traditional art will keep the visitor spellbound. Local craftsmen excel in arts such batiks, silver and leather works. Next to the traditional, contemporary art has found fertile soil in Yogya's culture oriented society.</p>
+                
+                <p>Yogyakarta is often called the main gateway to the Central Java as where it is geographically located. It stretches from Mount Merapi to the Indian Ocean. There is daily air service to Yogya from Jakarta, Surabaya and Bali as well as regular train service and easy accessibility by road. Yogyakarta is commonly considered as the modern cultural of Central Java. It is a very lively city and a shopper's delight. The main road, Malioboro Street, is always crowded and famous for its night street food-culture and street vendors. Many tourist shops and cheap hotels are concentrated along this street or in the adjoining tourist area such Sosrowijayan Street.</p>
+                
+                <p>The key attraction of Yogyakarta is 'Kraton' (the Sultan's Palace), the centre of Yogya's traditional life and despite the advance of modernity; it still emanates the spirit of refinement, which has been the hallmark of Yogya's art for centuries. This vast complex of decaying buildings was built in the 18th century, and is actually a walled city within the city with luxurious pavilions and in which the current Sultan still resides. Yogyakarta is also the only major city, which still has traditional 'Becak' (rickshaw-style) transport.</p>
+            </div>
+            
+            <div class="question-number">16.</div>
+            <p>What is the purpose of the text?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q16"> A. To amuse the readers with Yogyakarta</div>
+                <div class="option"><input type="radio" name="q16"> B. To describe the location of Yogyakarta</div>
+                <div class="option"><input type="radio" name="q16"> C. To persuade the readers to go to Yogyakarta</div>
+                <div class="option"><input type="radio" name="q16"> D. To promote Yogyakarta as tourist destination</div>
+                <div class="option"><input type="radio" name="q16"> E. To show how to go to Yogyakarta</div>
+            </div>
+            
+            <div class="question-number">17.</div>
+            <p>We know from the second paragraph that ......</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q17"> A. Plane is the most convenient access to reach Yogyakarta</div>
+                <div class="option"><input type="radio" name="q17"> B. Many local tourists prefer staying in Sosrowijayan Street</div>
+                <div class="option"><input type="radio" name="q17"> C. Sosrowijayan is also known as shopping and culinary delight</div>
+                <div class="option"><input type="radio" name="q17"> D. Yogyakarta is called the main gateway to Central Java</div>
+                <div class="option"><input type="radio" name="q17"> E. There are many convenient stores in the streets of Yogyakarta</div>
+            </div>
+        </div>
+        
+        <!-- Soal 18-19: Text about Galileo -->
+        <div class="question">
+            <div class="question-number">Text for questions 18 - 19</div>
+            <div class="question-text">
+                <p>Galileo Galilei (1564-1642) — Astronomer and Scientist. Galileo developed a superior telescope and made many significant discoveries in astronomy. He was sentenced to life imprisonment by the inquisition for his support for the Copernican theory that the sun was at the center of the solar system.</p>
+                
+                <p>Galileo was born in Florence, Italy in 1564 to a poor but noble family. His parents recognized their child's innate intelligence and talents and so made sacrifices to have him educated. At his father's insistence, Galileo studied the profitable career of medicine. But, at the University of Pisa, Galileo became fascinated in a wide range of subjects. He was also critical of many of Aristotle's teaching which had dominated education for the past 2,000 years.</p>
+                
+                <p>Galileo was appointed to be a mathematics professor at the University of Pisa, but his strident criticisms of Aristotle left him isolated among his contemporaries. After three years of persecution, he resigned and went to the University of Padua, where he taught maths. His entertaining lectures attracted a large following and he was able to spend the next 18 years pursuing his interests in astronomy and mechanics.</p>
+            </div>
+            
+            <div class="question-number">18.</div>
+            <p>Why did Galileo resign from the University of Pisa?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q18"> A. He was bored</div>
+                <div class="option"><input type="radio" name="q18"> B. He wanted to study medicine again</div>
+                <div class="option"><input type="radio" name="q18"> C. He was persecuted for criticizing Aristotle</div>
+                <div class="option"><input type="radio" name="q18"> D. He was offered a better salary in Padua</div>
+                <div class="option"><input type="radio" name="q18"> E. He was appointed to be a mathematics professor</div>
+            </div>
+            
+            <div class="question-number">19.</div>
+            <p>How long did Galileo stay at the University of Padua?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q19"> A. 10 years</div>
+                <div class="option"><input type="radio" name="q19"> B. 18 years</div>
+                <div class="option"><input type="radio" name="q19"> C. 13 years</div>
+                <div class="option"><input type="radio" name="q19"> D. 8 years</div>
+                <div class="option"><input type="radio" name="q19"> E. 28 years</div>
+            </div>
+        </div>
+        
+        <!-- Soal 20-22: Letter confirmation -->
+        <div class="question">
+            <div class="question-number">Text for questions 20 - 22</div>
+            <div class="question-text">
+                <p><strong>November 24th, 2022</strong></p>
+                <p>Supply Manager of Kakiku<br>
+                25 Gandapura Street<br>
+                Bandung</p>
+                
+                <p>Dear Sir/Madam,</p>
+                
+                <p>I am writing to (20) . . . your order of 200 boxes of short white socks for December 1st, 2022. We have sent our order form via fax to your office, but we have not heard anything from you. We are worried that you have not receive it. (21) . . . , would you please tell us directly whether you have receive it or not? You can directly contact us (22) . . . (022) 420555612.</p>
+                
+                <p>We really appreciate your cooperation. I look forward to hearing your response soon.</p>
+                
+                <p>Sincerely yours,<br>
+                Syahrini</p>
+            </div>
+            
+            <div class="question-number">20.</div>
+            <p>Choose the correct word to fill in the blank (20):</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q20"> A. Complain</div>
+                <div class="option"><input type="radio" name="q20"> B. Compete</div>
+                <div class="option"><input type="radio" name="q20"> C. Contend</div>
+                <div class="option"><input type="radio" name="q20"> D. Confirm</div>
+                <div class="option"><input type="radio" name="q20"> E. Call</div>
+            </div>
+            
+            <div class="question-number">21.</div>
+            <p>Choose the correct word to fill in the blank (21):</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q21"> A. Because</div>
+                <div class="option"><input type="radio" name="q21"> B. Although</div>
+                <div class="option"><input type="radio" name="q21"> C. Therefore</div>
+                <div class="option"><input type="radio" name="q21"> D. Inspite of</div>
+                <div class="option"><input type="radio" name="q21"> E. Nevertheless</div>
+            </div>
+            
+            <div class="question-number">22.</div>
+            <p>Choose the correct word to fill in the blank (22):</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q22"> A. In</div>
+                <div class="option"><input type="radio" name="q22"> B. At</div>
+                <div class="option"><input type="radio" name="q22"> C. On</div>
+                <div class="option"><input type="radio" name="q22"> D. Below</div>
+                <div class="option"><input type="radio" name="q22"> E. Above</div>
+            </div>
+        </div>
+        
+        <!-- Soal 23-25: Job application letter -->
+        <div class="question">
+            <div class="question-number">Text for questions 23 - 25</div>
+            <div class="question-text">
+                <p><strong>Jakarta, November 25, 2024</strong><br>
+                Human Resources Manager<br>
+                PT. Abadi Sejahtera<br>
+                Jl. Raya No. 25<br>
+                Jakarta</p>
+                
+                <p>Dear Sir/Madam,</p>
+                
+                <p>I am writing to express my interest in applying for the position of Marketing Assistant at PT. Abadi Sejahtera, which was advertised on your company website. I am a recent graduate of the Marketing Program at SMK Negeri 2 Jakarta, where I developed a strong foundation in marketing strategies, consumer behavior, and digital marketing.</p>
+                
+                <p>During my internship at XYZ Marketing Agency, I gained hands-on experience in assisting with market research, preparing marketing materials, and conducting promotional campaigns. My ability to communicate effectively, work in a team, and manage multiple tasks simultaneously has been strengthened through this experience.</p>
+                
+                <p>I am confident that my skills, coupled with my passion for marketing, make me a strong candidate for this position. I would appreciate the opportunity to contribute to your team and learn from the experienced professionals at PT. Abadi Sejahtera. Please find my resume attached for further details regarding my qualifications.</p>
+                
+                <p>Thank you for considering my application. I look forward to the opportunity to discuss how I can contribute to the continued success of your company. You can reach my phone number 08123456789 and my e-mail dina.ayu@email.com</p>
+                
+                <p>Sincerely,<br>
+                <strong>Dina Ayu</strong></p>
+            </div>
+            
+            <div class="question-number">23.</div>
+            <p>What skill does Dina Ayu highlight as important for the job?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q23"> A. Market research</div>
+                <div class="option"><input type="radio" name="q23"> B. Digital Marketing</div>
+                <div class="option"><input type="radio" name="q23"> C. Manager Marketing</div>
+                <div class="option"><input type="radio" name="q23"> D. Communication, teamwork, and task management</div>
+                <div class="option"><input type="radio" name="q23"> E. Product development</div>
+            </div>
+            
+            <div class="question-number">24.</div>
+            <p>Which of the following is NOT mentioned as a qualification of Dina Ayu in the letter?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q24"> A. Experience in preparing marketing materials</div>
+                <div class="option"><input type="radio" name="q24"> B. Knowledge of consumer behavior</div>
+                <div class="option"><input type="radio" name="q24"> C. Skills in managing multiple tasks</div>
+                <div class="option"><input type="radio" name="q24"> D. Assisting with market research</div>
+                <div class="option"><input type="radio" name="q24"> E. Expertise in financial accounting</div>
+            </div>
+            
+            <div class="question-number">25.</div>
+            <p>What should be included in the introduction of an application letter?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q25"> A. The reason for applying and a brief introduction to the applicant's background</div>
+                <div class="option"><input type="radio" name="q25"> B. A detailed list of qualifications</div>
+                <div class="option"><input type="radio" name="q25"> C. The applicant's complete work history</div>
+                <div class="option"><input type="radio" name="q25"> D. Information about the applicant's family</div>
+                <div class="option"><input type="radio" name="q25"> E. The experience of applicant</div>
+            </div>
+        </div>
+        
+        <!-- Soal 26-27: How to make coffee -->
+        <div class="question">
+            <div class="question-number">Text for questions 26 - 27</div>
+            <div class="question-text">
+                <p><strong>How to Make a Cup of Coffee</strong></p>
+                <ol>
+                    <li>Boil the water.</li>
+                    <li>Put one or two spoons of coffee into a cup.</li>
+                    <li>Pour the hot water into the cup.</li>
+                    <li>Add sugar and milk as you like.</li>
+                    <li>Stir well and serve hot.</li>
+                </ol>
+            </div>
+            
+            <div class="question-number">26.</div>
+            <p>What is the purpose of the text?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q26"> A. To report the steps of making a cup of coffee</div>
+                <div class="option"><input type="radio" name="q26"> B. To persuade reader to make a cup of coffee</div>
+                <div class="option"><input type="radio" name="q26"> C. To provide instant ways of making a cup of coffee</div>
+                <div class="option"><input type="radio" name="q26"> D. To inform the readers how to learn about making a cup of coffee</div>
+                <div class="option"><input type="radio" name="q26"> E. To instruct readers how to make a cup of coffee</div>
+            </div>
+            
+            <div class="question-number">27.</div>
+            <p>"Add sugar and milk as you like." The word <em>add</em> is closest in meaning to...</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q27"> A. Remove</div>
+                <div class="option"><input type="radio" name="q27"> B. Mix</div>
+                <div class="option"><input type="radio" name="q27"> C. Put in</div>
+                <div class="option"><input type="radio" name="q27"> D. Take</div>
+                <div class="option"><input type="radio" name="q27"> E. Stir</div>
+            </div>
+        </div>
+        
+        <!-- Soal 28: Grammar -->
+        <div class="question">
+            <div class="question-number">28.</div>
+            <p>If you ________ a little earlier, you would have caught the bus.</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q28"> A. arrive</div>
+                <div class="option"><input type="radio" name="q28"> B. had arrived</div>
+                <div class="option"><input type="radio" name="q28"> C. would arrive</div>
+                <div class="option"><input type="radio" name="q28"> D. arrived</div>
+                <div class="option"><input type="radio" name="q28"> E. Will arrive</div>
+            </div>
+        </div>
+        
+        <!-- Soal 29: Dialogue about occupation -->
+        <div class="question">
+            <div class="question-number">29.</div>
+            <div class="question-text">
+                <table class="dialogue-table">
+                    <tr>
+                        <td class="speaker">Jono</td>
+                        <td>: Hello Joni! Long time no see. How have you been?</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Joni</td>
+                        <td>: Hello Jono! Yeah. I'm good. Thank you. And you?</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Jono</td>
+                        <td>: I'm good as well. By the way, what do you do now?</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Joni</td>
+                        <td>: ... in a repair shop.</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Jono</td>
+                        <td>: That's a great job.</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Joni</td>
+                        <td>: How about you?</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Jono</td>
+                        <td>: I run my own business. I have a cafe. The special cuisine is Japanese food.</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Joni</td>
+                        <td>: Sounds great. Are you happy with your job?</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Jono</td>
+                        <td>: off course. I enjoy my job.</td>
+                    </tr>
+                </table>
+            </div>
+            <p>What is Joni's occupation?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q29"> A. I'm a guide</div>
+                <div class="option"><input type="radio" name="q29"> B. I like my job.</div>
+                <div class="option"><input type="radio" name="q29"> C. I just walk around.</div>
+                <div class="option"><input type="radio" name="q29"> D. I'm a mechanic.</div>
+                <div class="option"><input type="radio" name="q29"> E. I'm a shopkeeper.</div>
+            </div>
+        </div>
+        
+        <!-- Soal 30: Dialogue about invitation -->
+        <div class="question">
+            <div class="question-number">30.</div>
+            <div class="question-text">
+                <table class="dialogue-table">
+                    <tr>
+                        <td class="speaker">Neni</td>
+                        <td>: Hello, Rianti. How is it going?</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Rianti</td>
+                        <td>: Hi, Neni. I am totally good, and you? What are you doing here?</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Neni</td>
+                        <td>: I am alright. I have been looking for you.</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Rianti</td>
+                        <td>: Wow, that's very kind of you. What happen?</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Neni</td>
+                        <td>: Do I disturb you now? I just want to give this one. It is my parent's 20th wedding anniversary. They will hold a garden party. If you have nothing planned for next Saturday. Would you come to their party?</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Rianti</td>
+                        <td>: ..., what time?</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Neni</td>
+                        <td>: At 07.00 pm. I hope you come to the party.</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Rianti</td>
+                        <td>: Of course. See u on Saturday.</td>
+                    </tr>
+                </table>
+            </div>
+            <p>The suitable expression to complete the dialogue is ...</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q30"> A. I am sorry. I have another schedule</div>
+                <div class="option"><input type="radio" name="q30"> B. Sure, when?</div>
+                <div class="option"><input type="radio" name="q30"> C. That sounds great.</div>
+                <div class="option"><input type="radio" name="q30"> D. Thank you for your invitation. But, I doubt about it.</div>
+                <div class="option"><input type="radio" name="q30"> E. I like it. But I will accompany my mother to the doctor</div>
+            </div>
+        </div>
+        
+        <!-- Soal 31: Grammar conditional -->
+        <div class="question">
+            <div class="question-number">31.</div>
+            <p>If I had time, I ________ to the concert.</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q31"> A. will go</div>
+                <div class="option"><input type="radio" name="q31"> B. would have gone</div>
+                <div class="option"><input type="radio" name="q31"> C. would go</div>
+                <div class="option"><input type="radio" name="q31"> D. went</div>
+                <div class="option"><input type="radio" name="q31"> E. go</div>
+            </div>
+        </div>
+        
+        <!-- Soal 32: Dialogue about preference -->
+        <div class="question">
+            <div class="question-number">32.</div>
+            <div class="question-text">
+                <table class="dialogue-table">
+                    <tr>
+                        <td class="speaker">Yanti</td>
+                        <td>: What would you like for breakfast, omelette or toast?</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Roni</td>
+                        <td>: ... , thanks.</td>
+                    </tr>
+                </table>
+            </div>
+            <p>Choose the best response:</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q32"> A. I like it very much</div>
+                <div class="option"><input type="radio" name="q32"> B. I prefer something delicious</div>
+                <div class="option"><input type="radio" name="q32"> C. I prefer omelette with cheese</div>
+                <div class="option"><input type="radio" name="q32"> D. I really want to have breakfast</div>
+                <div class="option"><input type="radio" name="q32"> E. We'd better have breakfast now</div>
+            </div>
+        </div>
+        
+        <!-- Soal 33: Telephone conversation -->
+        <div class="question">
+            <div class="question-number">33.</div>
+            <div class="question-text">
+                <table class="dialogue-table">
+                    <tr>
+                        <td class="speaker">Chandra</td>
+                        <td>: Hello, It's Chandra. Can I help you?</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Bams</td>
+                        <td>: Can I talk to Mr. Budi?</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Chandra</td>
+                        <td>: Sure, .......</td>
+                    </tr>
+                </table>
+            </div>
+            <p>Choose the best response:</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q33"> A. He is in a meeting now</div>
+                <div class="option"><input type="radio" name="q33"> B. Just a moment, please</div>
+                <div class="option"><input type="radio" name="q33"> C. Any message?</div>
+                <div class="option"><input type="radio" name="q33"> D. Call him later</div>
+                <div class="option"><input type="radio" name="q33"> E. Any Question?</div>
+            </div>
+        </div>
+        
+        <!-- Soal 34: Customer service -->
+        <div class="question">
+            <div class="question-number">34.</div>
+            <div class="question-text">
+                <table class="dialogue-table">
+                    <tr>
+                        <td class="speaker">Customer Service</td>
+                        <td>: Customer service, This is, Linda speaking, Can I help you?</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Arda</td>
+                        <td>: I am Arda, I want to activate online banking on my phone.</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Customer Service</td>
+                        <td>: ........</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Arda</td>
+                        <td>: Sure, 088865742345</td>
+                    </tr>
+                </table>
+            </div>
+            <p>Choose the best response:</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q34"> A. Can I have your number?</div>
+                <div class="option"><input type="radio" name="q34"> B. Where is your phone?</div>
+                <div class="option"><input type="radio" name="q34"> C. What is your number?</div>
+                <div class="option"><input type="radio" name="q34"> D. How much is your number?</div>
+                <div class="option"><input type="radio" name="q34"> E. May I help you?</div>
+            </div>
+        </div>
+        
+        <!-- Soal 35-37: Holiday in Bali -->
+        <div class="question">
+            <div class="question-number">Text for questions 35 - 37</div>
+            <div class="question-text">
+                <p>Last year, I had an unforgettable holiday in Bali. I went there with my family for a week. We traveled by plane and it took about two hours from Jakarta to Denpasar.</p>
+                
+                <p>On the first day, we visited Kuta Beach. The weather was sunny and the beach was very crowded. I swam in the sea and played volleyball with my brother. In the evening, we watched the sunset. It was so beautiful.</p>
+                
+                <p>The next day, we went to Ubud to see the rice terraces and traditional dance performance. I really enjoyed the Barong dance because it was unique and full of cultural values.</p>
+                
+                <p>On the last day, before going back home, we bought some souvenirs at Sukawati Market. I bought a T-shirt and a keychain for my best friend.</p>
+                
+                <p>That holiday in Bali was one of the best moments in my life. I will never forget it.</p>
+            </div>
+            
+            <div class="question-number">35.</div>
+            <p>What is the purpose of the text?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q35"> A. To persuade people to visit to Bali</div>
+                <div class="option"><input type="radio" name="q35"> B. To ask to go to Bali</div>
+                <div class="option"><input type="radio" name="q35"> C. To inform about tourist destinations</div>
+                <div class="option"><input type="radio" name="q35"> D. To tell how to go to Bali</div>
+                <div class="option"><input type="radio" name="q35"> E. To retell the writer's holiday experience</div>
+            </div>
+            
+            <div class="question-number">36.</div>
+            <p>What did the writer enjoy in Ubud?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q36"> A. The sunset</div>
+                <div class="option"><input type="radio" name="q36"> B. The Barong dance</div>
+                <div class="option"><input type="radio" name="q36"> C. The souvenirs</div>
+                <div class="option"><input type="radio" name="q36"> D. The swimming pool</div>
+                <div class="option"><input type="radio" name="q36"> E. The beach</div>
+            </div>
+            
+            <div class="question-number">37.</div>
+            <p>Where did the writer buy souvenirs?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q37"> A. Sukawati Market</div>
+                <div class="option"><input type="radio" name="q37"> B. Ubud Market</div>
+                <div class="option"><input type="radio" name="q37"> C. Kuta Beach</div>
+                <div class="option"><input type="radio" name="q37"> D. Denpasar Airport</div>
+                <div class="option"><input type="radio" name="q37"> E. Traditional Market</div>
+            </div>
+        </div>
+        
+        <!-- Soal 38-39: Announcement -->
+        <div class="question">
+            <div class="question-number">Text for questions 38 - 39</div>
+            <div class="question-text">
+                <p><strong>To: All Students</strong></p>
+                <p><em>The school will hold an English Speech Contest on Friday, October 14th at the school hall. Those who are interested should register with the English teacher no later than October 10th.</em></p>
+            </div>
+            
+            <div class="question-number">38.</div>
+            <p>What is the purpose of the announcement?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q38"> A. To tell student how to register English contest</div>
+                <div class="option"><input type="radio" name="q38"> B. To ask students to bring an English book</div>
+                <div class="option"><input type="radio" name="q38"> C. To inform about the English test schedule</div>
+                <div class="option"><input type="radio" name="q38"> D. To explain the rules of the contest</div>
+                <div class="option"><input type="radio" name="q38"> E. To invite students to join the contest</div>
+            </div>
+            
+            <div class="question-number">39.</div>
+            <p>When is the last day to register?</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q39"> A. October 14th</div>
+                <div class="option"><input type="radio" name="q39"> B. October 10th</div>
+                <div class="option"><input type="radio" name="q39"> C. October 13th</div>
+                <div class="option"><input type="radio" name="q39"> D. October 12th</div>
+                <div class="option"><input type="radio" name="q39"> E. October 9th</div>
+            </div>
+        </div>
+        
+        <!-- Soal 40: Asking for direction -->
+        <div class="question">
+            <div class="question-number">40.</div>
+            <div class="question-text">
+                <table class="dialogue-table">
+                    <tr>
+                        <td class="speaker">Andi</td>
+                        <td>: "Excuse me, could you tell me the way to the post office?"</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Woman</td>
+                        <td>: "________."</td>
+                    </tr>
+                </table>
+            </div>
+            <p>Complete the dialogue with the correct expression:</p>
+            <div class="options">
+                <div class="option"><input type="radio" name="q40"> A. You should not go there.</div>
+                <div class="option"><input type="radio" name="q40"> B. No, I can't go there.</div>
+                <div class="option"><input type="radio" name="q40"> C. Sorry, I am busy now.</div>
+                <div class="option"><input type="radio" name="q40"> D. Yes, go straight ahead and turn left.</div>
+                <div class="option"><input type="radio" name="q40"> E. Yes, Sit down please</div>
+            </div>
+        </div>
+        
+        <!-- ESSAY SECTION -->
+        <div class="essay-section" id="essay">
+            <div class="section-title">B. ESSAY</div>
+            
+            <div class="question">
+                <div class="question-number">Text for 1 - 3</div>
+                <p>read the text below and answer the question!</p>
+                
+                <div class="part-title">"The Brave Little Elephant"</div>
+                
+                <div class="text-indent">
+                    <p>Once upon a time, in a vast jungle, there lived a little elephant named Elly. Elly was smaller than the other elephants, and she was often teased by the bigger ones. But despite her size, Elly had a big heart and was always ready to help others. One day, a fierce storm hit the jungle. A strong river current swept away some of the animals, and they were in danger. Elly, without thinking twice, used her trunk to grab a fallen tree and created a bridge for the animals to cross safely. Her courage saved many lives, and from that day, everyone in the jungle respected her.</p>
+                </div>
+                
+                <div class="essay-question">
+                    <div class="question-number">1.</div>
+                    <p>What made Elly different from the other elephants, and how did she prove her worth in the jungle?</p>
+                    <textarea rows="4" style="width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                </div>
+                
+                <div class="essay-question">
+                    <div class="question-number">2.</div>
+                    <p>What was the main difference between Elly and the other elephants in the jungle?</p>
+                    <textarea rows="4" style="width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-number">The dialog for no 3 - 5</div>
+                
+                <table class="dialogue-table">
+                    <tr>
+                        <td class="speaker">Interviewer</td>
+                        <td>: Good morning. Please have a seat. Can you tell me about yourself?</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Applicant</td>
+                        <td>: Good morning. My name is Rina Setiawan. I graduated from SMK in Computer and Network Engineering last year. I am hardworking and eager to learn.</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Interviewer</td>
+                        <td>: Why do you want to work in our company?</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Applicant</td>
+                        <td>: Because your company has a good reputation in the IT field, and I want to gain more experience in networking and telecommunications.</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Interviewer</td>
+                        <td>: What are your strengths?</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Applicant</td>
+                        <td>: I am good at setting up computer networks, troubleshooting hardware and software problems, and I can work well in a team.</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Interviewer</td>
+                        <td>: Do you have any weaknesses?</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Applicant</td>
+                        <td>: Sometimes I feel nervous when speaking in public, but I am improving it by practicing.</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Interviewer</td>
+                        <td>: Thank you, Rina. We will contact you soon.</td>
+                    </tr>
+                    <tr>
+                        <td class="speaker">Applicant</td>
+                        <td>: Thank you very much. I look forward to hearing from you.</td>
+                    </tr>
+                </table>
+                
+                <div class="essay-question">
+                    <div class="question-number">3.</div>
+                    <p>What does Rina say about her personality when introducing herself?</p>
+                    <textarea rows="4" style="width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                </div>
+                
+                <div class="essay-question">
+                    <div class="question-number">4.</div>
+                    <p>Why does the interviewer ask about strengths and weaknesses?</p>
+                    <textarea rows="4" style="width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                </div>
+                
+                <div class="essay-question">
+                    <div class="question-number">5.</div>
+                    <p>How does Rina overcome her weakness?</p>
+                    <textarea rows="4" style="width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                </div>
+            </div>
+        </div>
+        
+        <button class="btn btn-submit" onclick="submitAnswers()">Submit Answers</button>
+        
+        <div class="navigation">
+            <button class="btn" onclick="scrollToTop()">Back to Top</button>
+            <button class="btn" onclick="scrollToSection('listening')">Listening Section</button>
+            <button class="btn" onclick="scrollToSection('reading')">Reading Section</button>
+            <button class="btn" onclick="scrollToSection('essay')">Essay Section</button>
+        </div>
+    </div>
+    
+    <div class="timer" id="timer">120:00</div>
+
+    <script>
+        // Audio controls
+        const audio = document.getElementById('listeningAudio');
+        
+        function playAudio() {
+            audio.play();
+        }
+        
+        function pauseAudio() {
+            audio.pause();
+        }
+        
+        function restartAudio() {
+            audio.currentTime = 0;
+            audio.play();
+        }
+        
+        // Timer functionality
+        let timeLeft = 120 * 60; // 120 minutes in seconds
+        const timerElement = document.getElementById('timer');
+        
+        function updateTimer() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            
+            if (timeLeft > 0) {
+                timeLeft--;
+            } else {
+                clearInterval(timerInterval);
+                alert("Waktu telah habis! Silakan submit jawaban Anda.");
+            }
+        }
+        
+        const timerInterval = setInterval(updateTimer, 1000);
+        
+        // Progress bar
+        function updateProgressBar() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        }
+        
+        window.onscroll = function() { updateProgressBar(); };
+        
+        // Navigation functions
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        
+        function scrollToBottom() {
+            const essaySection = document.querySelector('.essay-section');
+            essaySection.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Submit answers
+        function submitAnswers() {
+            const confirmed = confirm("Apakah Anda yakin ingin mengirim jawaban? Setelah dikirim, Anda tidak dapat mengubah jawaban.");
+            if (confirmed) {
+                alert("Jawaban berhasil dikirim! Terima kasih telah mengerjakan Try Out.");
+                // In a real application, you would send the data to a server here
+            }
+        }
+        
+        // Initialize progress bar
+        updateProgressBar();
+    </script>
+</body>
+</html>

@@ -231,7 +231,7 @@
 
         // Pilihan Ganda - GUNAKAN innerHTML
         html += "<h3>Pilihan Ganda</h3><ol>";
-        data.pilihan_ganda.slice(0,35).forEach((q,i) => {
+        data.pilihan_ganda.slice(0,40).forEach((q,i) => {
           html += `<li><div class="soal-text">${q.pertanyaan}</div><br>`;
           const abjad = ["A", "B", "C", "D", "E"];
           q.opsi.forEach((o, j) => {
@@ -303,3 +303,4 @@
 </script>
 </body>
 </html>
+

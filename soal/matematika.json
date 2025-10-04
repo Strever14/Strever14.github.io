@@ -1,0 +1,351 @@
+{
+  "pilihan_ganda": [
+    {
+      "pertanyaan": "Hitunglah $\\frac{\\left( 2^{3} \\cdot 2^{5} \\right)}{2^{4}} = \\ldots$",
+      "opsi": [
+        "$2^{3}$",
+        "$2^{4}$",
+        "$2^{5}$",
+        "$2^{6}$",
+        "$2^{7}$"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Jika $a=3$, $b=4$, tentukan nilai $a^{2} + 2ab + b^{2}$",
+      "opsi": [
+        "36",
+        "45",
+        "49",
+        "64",
+        "81"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Faktorisasi dari $x^{2} - 16$ adalah ...",
+      "opsi": [
+        "$(x - 2)(x + 8)$",
+        "$(x - 4)(x + 4)$",
+        "$(x - 8)(x + 2)$",
+        "$(x - 16)(x + 1)$",
+        "$(x + 16)(x - 1)$"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Bentuk sederhana dari $\\left( \\frac{a^{2}b^{3}c^{-2}}{a^{-1}b^{2}c^{-1}} \\right)^{2} = \\ldots$",
+      "opsi": [
+        "$\\frac{a^{6}b^{2}}{c^{2}}$",
+        "$\\frac{a^{6}b^{2}}{c^{3}}$",
+        "$\\frac{a^{4}}{b^{2}c^{3}}$",
+        "$\\frac{a^{3}}{b^{2}c^{3}}$",
+        "$a^{-6}b^{-2}c^{-3}$"
+      ],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Bentuk paling sederhana dari $\\sqrt{81} - \\sqrt{25} = \\ldots$",
+      "opsi": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Bentuk sederhana dari $\\left( 4\\sqrt{3} - 1 \\right)\\left( 2 + \\sqrt{3} \\right) = \\ldots$ adalah ...",
+      "opsi": [
+        "$10 + 7\\sqrt{3}$",
+        "$10 + 5\\sqrt{3}$",
+        "$5 + 3\\sqrt{3}$",
+        "$5 + 2\\sqrt{3}$",
+        "$3 + 3\\sqrt{3}$"
+      ],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Tentukan nilai logaritma dari $^{3}\\log 9 + ^{3}\\log 18 - ^{3}\\log 2 = \\ldots$",
+      "opsi": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "Jika $\\frac{5}{x} = 20$, maka nilai $x$ adalah ...",
+      "opsi": [
+        "$\\frac{1}{5}$",
+        "$\\frac{1}{4}$",
+        "$\\frac{1}{3}$",
+        "$\\frac{1}{2}$",
+        "$\\frac{1}{10}$"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Nilai $x$ dari persamaan $\\frac{3x + 7}{5} = \\frac{1 + 4x}{6}$ adalah ...",
+      "opsi": [
+        "$-49$",
+        "$-4$",
+        "$-9$",
+        "18",
+        "$18\\frac{1}{2}$"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Himpunan penyelesaian dari pertidaksamaan $2(x - 3) < 4(2x + 6)$ adalah ...",
+      "opsi": [
+        "$\\{ x|x < -5, x \\in R\\}$",
+        "$\\{ x|x > -5, x \\in R\\}$",
+        "$\\{ x|x < -3, x \\in R\\}$",
+        "$\\{ x|x < 5, x \\in R\\}$",
+        "$\\{ x|x > 5, x \\in R\\}$"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Dika membeli 5 saputangan dan 3 ikat pinggang dengan harga Rp.465.000,00. Rendi juga membeli barang yang sama, yaitu 2 saputangan dan 1 ikat pinggang dengan harga Rp.165.000,00. Harga 1 saputangan dan 1 ikat pinggang adalah ...",
+      "opsi": [
+        "Rp.25.000,00 dan Rp.100.000,00",
+        "Rp.25.500,00 dan Rp.100.000,00",
+        "Rp.27.000,00 dan Rp.105.000,00",
+        "Rp.27.500,00 dan Rp.105.000,00",
+        "Rp.30.000,00 dan Rp.105.000,00"
+      ],
+      "jawaban": "E"
+    },
+    {
+      "pertanyaan": "Pada toko buku \"Azahra\", Yusuf membeli 4 buku, 2 pulpen dan 3 pensil dengan harga Rp. 26.000. Khairan membeli 3 buku, 3 pulpen dan 1 pensil dengan harga Rp. 21.500. Kharaisa membeli 3 buku dan 1 pensil dengan harga Rp. 12.500. Jika Azura membeli 3 pulpen dan 2 pensil, maka ia harus membayar ...",
+      "opsi": [
+        "Rp. 3.000",
+        "Rp. 13.000",
+        "Rp. 23.000",
+        "Rp. 33.000",
+        "Rp. 43.000"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Jumlah $n$ suku pertama deret aritmatika dinyatakan dengan $s_{n} = 2n^{2} + 4n$. Suku ke-10 deret tersebut adalah ...",
+      "opsi": [
+        "26",
+        "27",
+        "32",
+        "38",
+        "42"
+      ],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "Diketahui barisan aritmatika 5,8,11,14, ... ,155. Banyak suku barisan tersebut adalah ...",
+      "opsi": [
+        "50",
+        "51",
+        "53",
+        "54",
+        "56"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Nilai dari $\\sin 45^{\\circ} = \\ldots$",
+      "opsi": [
+        "$\\frac{1}{2}$",
+        "$\\frac{\\sqrt{2}}{2}$",
+        "$\\frac{\\sqrt{3}}{2}$",
+        "1",
+        "0"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Diberikan sekumpulan data sebagai berikut: 1, 4, 3, 5, 2, 4, 3, 5, 2, 6, 2, 4, 1, 3, 4, 3, 5, 4, 1, 6. Modus dari data tersebut adalah ...",
+      "opsi": [
+        "2,5",
+        "3",
+        "4",
+        "5",
+        "3,5"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Median dari data 2,4,6,8,10,12,14 = ...",
+      "opsi": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Dari suatu barisan aritmatika diketahui suku ke-10 = 20 dan suku ke-24 = 48, suku ke-50 barisan tersebut adalah ...",
+      "opsi": [
+        "100",
+        "102",
+        "106",
+        "108",
+        "116"
+      ],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Nilai $\\lim_{x \\rightarrow 1} \\frac{x - 3}{x^{2} - 2x - 3} = \\ldots$",
+      "opsi": [
+        "$-\\frac{1}{3}$",
+        "$-\\frac{1}{4}$",
+        "$-\\frac{1}{5}$",
+        "$\\frac{1}{4}$",
+        "$\\frac{1}{2}$"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Nilai $\\lim_{x \\rightarrow 4} \\frac{\\sqrt{9 + x^{2}}}{x - 3} = \\ldots$",
+      "opsi": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "jawaban": "E"
+    },
+    {
+      "pertanyaan": "Nilai $\\lim_{x \\rightarrow 0} \\frac{1 - x - 2x^{2}}{5x^{2} - 7x - 2} = \\ldots$",
+      "opsi": [
+        "$-\\frac{1}{2}$",
+        "$\\frac{1}{2}$",
+        "-2",
+        "4",
+        "-4"
+      ],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Nilai $\\lim_{x \\rightarrow 4} \\frac{x - 4}{\\sqrt{x} - 2} = \\ldots$",
+      "opsi": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "Nilai $\\lim_{x \\rightarrow \\infty} \\frac{5 - 2x - 4x^{2}}{2x^{2} - 3x - 7} = \\ldots$",
+      "opsi": [
+        "-5",
+        "-3",
+        "-2",
+        "-1",
+        "1"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Jika $g(x) = x^{2} + 2$, tentukan $g(-3) = \\ldots$",
+      "opsi": [
+        "7",
+        "11",
+        "9",
+        "10",
+        "12"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Volume kubus dengan rusuk 8 cm = ...",
+      "opsi": [
+        "256",
+        "512",
+        "576",
+        "600",
+        "640"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Diberikan fungsi $f(x) = 2x^{3} - 3x^{2} + 2x - 3.$ Nilai dari turunan fungsi tersebut untuk $x=1$ adalah ...",
+      "opsi": [
+        "2",
+        "5",
+        "8",
+        "12",
+        "14"
+      ],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Diketahui fungsi $f(x) = (2x - 1)(x + 7)$. Nilai turunan pertama fungsi untuk $x=2$ adalah ...",
+      "opsi": [
+        "27",
+        "13",
+        "21",
+        "29",
+        "33"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Hasil dari $\\int \\left( \\frac{6}{x^{2}} - 4x + 10x^{4} \\right) dx = \\ldots$",
+      "opsi": [
+        "$\\frac{6}{x} - 2x^{2} + 2x^{5} + C$",
+        "$\\frac{6}{x^{3}} - 4x^{2} + 2x^{5} + C$",
+        "$-\\frac{6}{x} - 2x^{2} + 2x^{5} + C$",
+        "$-\\frac{6}{x} - 4x^{2} - 5x^{5} + C$",
+        "$-6x - 2x^{2} + 2x^{5} + C$"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Hasil dari $\\int \\left( 2x^{2} + 3 \\right)(3x - 4) dx = \\ldots$",
+      "opsi": [
+        "$\\frac{3}{2}x^{4} - \\frac{8}{3}x^{3} + \\frac{7}{2}x^{2} - 12x + C$",
+        "$\\frac{3}{2}x^{4} - \\frac{8}{3}x^{3} - \\frac{9}{2}x^{2} - 12x + C$",
+        "$\\frac{3}{2}x^{4} - \\frac{8}{3}x^{3} + \\frac{9}{2}x^{2} - 12x + C$",
+        "$\\frac{3}{2}x^{4} - \\frac{8}{3}x^{3} + \\frac{9}{2}x^{2} + 12x + C$",
+        "$\\frac{3}{2}x^{4} - x^{3} + \\frac{9}{2}x^{2} - 12x + C$"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Nilai dari $\\int_{-1}^{2} \\left( -3x^{2} - 12x - 8 \\right) dx = \\ldots$",
+      "opsi": [
+        "-51",
+        "-50",
+        "-33",
+        "30",
+        "40"
+      ],
+      "jawaban": "A"
+    }
+  ],
+  "essay": [
+    {
+      "pertanyaan": "Determinan dari matriks $\\begin{bmatrix} 1 & 0 & 2 \\\\ 3 & 4 & 1 \\\\ -1 & 2 & 3 \\end{bmatrix}$ sama dengan ..."
+    },
+    {
+      "pertanyaan": "Bentuk sederhana dari $\\frac{7x^{3}y^{-4}z^{-6}}{84x^{-7}y^{-1}z^{-4}} = \\ldots$"
+    },
+    {
+      "pertanyaan": "Nilai dari $\\lim_{x \\rightarrow 0} \\left( \\frac{5x}{3 - \\sqrt{9 + x}} \\right)$ adalah ..."
+    },
+    {
+      "pertanyaan": "Turunan pertama dari $f(x) = (2x^{3} - 5x^{2} - 3)(4x + 10)$ adalah ..."
+    },
+    {
+      "pertanyaan": "Nilai dari $\\int_{1}^{2} \\left( \\frac{2}{x^{3}} - \\frac{1}{x^{2}} \\right) dx = \\ldots$"
+    }
+  ]
+}

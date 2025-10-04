@@ -1,29 +1,335 @@
 {
   "pilihan_ganda": [
     {
-      "pertanyaan": "Apa sinonim kata 'Indah'?",
-      "opsi": ["Cantik", "Buruk", "Kotor", "Jelek", "Biasa"],
-      "jawaban": "Cantik"
-    },
-    {
-      "pertanyaan": "Manakah yang termasuk majas?",
-      "opsi": ["Personifikasi", "Pythagoras", "Newton", "Integral", "Atom"],
-      "jawaban": "Personifikasi"
-    },
-    {
-    "pertanyaan": "Dengarkan audio berikut dan tentukan jenis suara yang didengar:<br><audio controls><source src='soal/audio/indo/river.ogg' type='audio/mpeg'>Browser tidak support audio</audio>",
+      "pertanyaan": "Terkadang tubuh ini selalu menginginkan untuk mengonsumsi minuman manis setiap hari. Tapi, hal itu tidak baik bagi tubuh. Kita harus bisa meminimalisir hal tersebut misalnya kamu bisa menggantikannya dengan buah-buahan yang mengandung banyak kandungan air seperti semangka atau melon.<br><br>Simpulan dari teks tersebut adalah....",
       "opsi": [
-        "Suara burung",
-        "Suara air mengalir", 
-        "Suara angin",
-        "Suara kendaraan",
-        "Suara manusia"
+        "minuman manis dapat digantikan dengan mengonsumsi buah yang berair banyak",
+        "minuman manis tidak sehat bagi tubuh",
+        "tubuh selalu membutuhkan minuman manis",
+        "semangka dan melon adalah buah yang memiliki kandungan air yang banyak",
+        "kita mungkin harus selalu mengonsumsi minuman yang manis setiap hari"
       ],
-      "jawaban": "Suara burung"
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Terkesan aneh bin ajaib kalau benar pemerintah melalui Kementerian Energi dan Sumber Daya Mineral (ESDM) dengan menggandeng Majelis Ulama Indonesia (MUI) mengeluarkan <strong>pemikiran</strong> haram memakai BBM bersubsidi bagi orang mampu. Langkah demikian merefleksikan ketidakberdayaan pemerintah merumuskan kebijakan mengatasi subsidi bahan bakar minyak yang dinilai tidak sempurna sasaran. Kekacauan kebijakan subsidi terletak pada desain kebijakan itu sendiri tanpa dikaitkan dengan persoalan nasional lain terkait energi. Semua ini bahwasanya disebabkan oleh ketidakjelasan Pemerintah dalam mengelola energi nasional.<br><br>Arti istilah <strong>pemikiran</strong> dalam paragraf tersebut yaitu ....",
+      "opsi": ["Keputusan", "Usulan", "Imbauan", "Larangan", "Peraturan"],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Pak Ranto seorang buruh bangunan. Ia selalu bekerja keras untuk mencukupi kebutuhan keluarga. Setiap hari, ia harus basah kuyup oleh tetesan keringatnya sendiri. Dalam hati ia berkata, \"Hanya inilah yang dapat aku lakukan.\" Harapannya hanya ingin mendapat rezeki yang berlimpah. \"Inilah yang akan dipersembahkan kepada keluargaku\".<br><br>Ungkapan yang sesuai dengan sikap Pak Ranto dalam ilustrasi tersebut adalah...",
+      "opsi": ["memeras keringat", "memeras otak", "beradu dengkul", "berkerut kening", "beradu kening"],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "<em>Cermati teks berikut!</em><br><br><table><tr><td><strong>Penjual</strong></td><td>: (..........)</td></tr><tr><td><strong>Pembeli</strong></td><td>: \"Maaf, kaos kaki yang berwarna hitam itu berapa mbak?\"</td></tr><tr><td><strong>Penjual</strong></td><td>: \"Kaos kaki ini harganya Rp.10.000,00\"</td></tr><tr><td><strong>Pembeli</strong></td><td>: \"Oh, mahal sekali\"</td></tr><tr><td><strong>Penjual</strong></td><td>: \"Boleh kurang kok dik\"</td></tr><tr><td><strong>Pembeli</strong></td><td>: \"Kalau Rp. 5000,00 boleh?\"</td></tr><tr><td><strong>Penjual</strong></td><td>: \"Boleh deh itung-itung buat penglaris dek\"</td></tr></table><br>Kalimat yang tepat untuk melengkapi kalimat yang rumpang di atas adalah...",
+      "opsi": [
+        "Kalau mau beli silakan mampir!",
+        "Silakan cari",
+        "Cari tas apa dik!",
+        "Silakan pilih dik!",
+        "Mau beli berapa dik?"
+      ],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "<strong>Cintaku Jauh Di Pulau</strong> <em>Karya: Chairil Anwar</em><br><br><blockquote>Amboi! Jalan sudah bertahun kutempuh !<br>Perahu yang bersama 'kan merapuh! mengapa ajal memanggil dulu sebelum<br>sempat berpeluk dengan cintaku</blockquote><br>Suasana dalam puisi di atas adalah....",
+      "opsi": ["Sedih", "Senang", "Gembira", "Kecewa", "Marah"],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Tak berselang lama, Gubernur Bali Made Mangku Pastika justru menyatakan masih <strong>konsisten</strong> dengan sikapnya terdahulu yakni menolak geothermal. Di samping pasokan listrik sudah cukup, panas bumi juga dikatakan tidak cocok dengan kondisi sosio-kultural masyarakat Bali. Termasuk kuat pada debit air danau dan mengancam kelangsungan alam Bali.<br><br>Makna kata <strong>konsisten</strong> pada paragraf tersebut adalah...",
+      "opsi": ["tetap (tidak berubah-ubah)", "sesuai dengan keadaan lingkungan", "Dinamis", "Patuh", "Kaku"],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "<em>Ayah selalu membawa gudang garam kemanapun ia pergi.</em><br><br>Kalimat di bawah ini yang menggunakan majas yang sama dengan kalimat di atas adalah...",
+      "opsi": [
+        "Sampai sekarang belum kelihatan batang hidungnya",
+        "Dini menyaksikan peristiwa itu dengan mata kepalanya sendiri",
+        "Bel telah memanggil anak-anak untuk masuk kelas",
+        "Pak Rahmad pergi ke kantor dengan naik kijang",
+        "Terimalah pemberian gudang ini dariku"
+      ],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "<em>Bacalah teks di bawah ini!</em><br><br>Dalam upaya pencegahan pencemaran udara, hutan mampu menangkal polutan gas ataupun butiran padat. Hasil penelitian menunjukkan bahwa volume udara yang mengandung polusi gas zon sebesar 150 ppm gas ternyata 99% terserap oleh tegukan hutan dalam waktu delapan jam. Komplek industri yang mengeluarkan polutan belerang dioksida di Uni Rusia ternyata berkurang dengan adanya jalur vegetasi kayu selebar 500 m yang mengelilingi kawasan industri tersebut. Tumbuhan berkayu ataupun pohon memang diandalkan dalam penyelamatan keadaan lingkungan seperti tanah, air, dan udara walaupun peran pohon tersebut sebatas pada lingkungan, yang belum akut. Pohon memang tidak akan mampu menetralisasi polusi, terutama pada kawasan industri besar.<br><br>Ide pokok paragraf tersebut adalah .....",
+      "opsi": ["pencegahan pencemaran", "kemampuan hutan", "penyelamat lingkungan", "populasi gas ozon", "penetralisasi polusi"],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Minggu lalu, saya berekreasi ke Taman Tirta. Suasananya sangat menyenangkan. Sayangnya, ada hal yang membuat kami tidak nyaman. Sampah-sampah berserakan di kawasan Taman Tirta. Ternyata, fasilitas tempat sampah sangat minim sehingga tidak cukup untuk menampung sampah para pengunjung.<br><br>Simpulan paragraf di atas adalah ....",
+      "opsi": [
+        "Suasana Taman Tirta sangat menyenangkan",
+        "Sampah-sampah berserakan di Taman Tirta karena minimnya tempat sampah",
+        "Taman Tirta adalah tempat rekreasi yang sangat menyenangkan walaupun banyak sampah",
+        "Tempat sampah di Taman Tirta sangat sedikit sehingga membuat tidak nyaman",
+        "Suasana tidak menyenangkan karena sampah"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Hati pada manusia memiliki fungsi yang banyak, lebih dari 500 fungsi. Beberapa fungsi hati yang penting antara lain menetralisasi racun dalam tubuh, sebagai organ pengontrol lemak, asam amino, dan kadar gula dalam darah. Selain itu, hati juga berfungsi memerangi infeksi, memproses makanan yang telah dicerna usus, mengatur kerja empedu, serta menghasilkan enzim dan protein.<br><br>Kalimat tanya yang jawabannya terdapat pada paragraf tersebut adalah...",
+      "opsi": [
+        "Bagaimana cara hati menetralisasi racun dalam tubuh?",
+        "Mengapa makanan harus diproses oleh usus halus?",
+        "Apa fungsi hati kerja empedu dan manfaatnya bagi tubuh?",
+        "Apa saja fungsi hati yang penting bagi tubuh?",
+        "Enzim apa saja yang dapat atau dihasilkan oleh hati?"
+      ],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "Di sisi timur, tampak warna-warni tenda para pendaki. Rupanya, mereka sudah merasa puas, kendati baru mencapai separuh perjalanan. Orang-orang itu telah berani memulai, tetapi begitu melihat indahnya lembah dan hijaunya pemandangan di atas sana, mereka begitu terpesona dan memutuskan berhenti untuk lekas menikmati jerih payahnya.<br><br>Latar tempat yang tergambar dalam penggalan novel tersebut adalah....",
+      "opsi": ["Tempat kemah", "Lembah", "Gunung", "Tanah lapang", "Di pinggir sungai"],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "<em>Cermati penggalan kutipan berikut!</em><br><br><blockquote>Aku pun bertanya, seperti biasanya, \"Biar apa, Ayah?\" \"Biar kamu tidak sombong jadi manusia, Zarah,\" ujarnya sambil tersenyum, lalu mengecup keningku. Seperti biasanya. Di tengah orang berlomba-lomba menjadi patung lilin, Ayah adalah salah satu dari sedikit orang yang memilih untuk tetap menjadi manusia.</blockquote><br>Watak tokoh ayah pada kutipan cerpen tersebut adalah....",
+      "opsi": ["Sombong", "rendah hati", "Religius", "Bijaksana", "Tabah"],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Sejak kecil aku harus bekerja keras dalam pendidikan, mengorbankan segalanya. Harapan yang diembuskan beasiswa itu membuatku terpukau. Aku sadar bahwa apa yang kualami selama ini bukanlah aku sebagai diriku. Beasiswa itu menawarkan semacam turning point: titik belok bagi hidupku, sebuah kesempatan yang mungkin didapat orang yang selalu mencari dirinya sendiri. Aku telah tertempa untuk mengejar Pendidikan, apa pun taruhannya.<br><br>Nilai moral yang terkandung dalam kutipan novel tersebut adalah...",
+      "opsi": [
+        "mengejar cita-cita hingga kemana pun",
+        "menuntut ilmu hingga tua",
+        "menggapai mimpi",
+        "pantang menyerah dalam menuntut ilmu",
+        "bekerja keras demi pendidikan"
+      ],
+      "jawaban": "E"
+    },
+    {
+      "pertanyaan": "<em>Bacalah paragraf berikut ini !</em><br><br>Kemajuan teknologi informasi di bidang komputer berbasis adidaya internet menjadi sebuah keniscayaan.. Keniscayaan ini memiliki implementasi kuat bagi proses lahirnya generasi baru. Sebut saja, generasi emas. Generasi ini akan muncul di tahun 2045 bersamaan dengan hari jadi ke-100 Republik Indonesia. Bisa dibayangkan, bila saat ini sekolah lengah dalam proses menjembatani komunikasi anak didik, utamanya dalam inseminasi penanaman nilai-nilai Pancasila dan keindonesiaan, kemungkinan besar bangsa kita akan menjadi penonton kemajuan negara-negara maju.<br><br>Tanggapan logis terhadap paragraf di atas adalah...",
+      "opsi": [
+        "Setiap negara selalu mengantisipasi kemajuan teknologi komunikasi agar tidak tertinggal dengan bangsa lain.",
+        "Kemajuan teknologi informasi tidak selamanya membuat bangsa Indonesia tertinggal dengan bangsa lain",
+        "Generasi emas akan muncul tahun 2045 bersamaan dengan HUT ke-100 Republik Indonesia.",
+        "Generasi emas harus dipersiapkan secara serius agar bangsa Indonesia sejajar dengan bangsa lain yang maju.",
+        "Generasi emas hanya akan terwujud apabila bangsa Indonesia tidak melupakan nilai-nilai budaya leluhur."
+      ],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "<em>Bacalah kutipan puisi berikut!</em><br><br><blockquote>Bertudung langit selalu biru<br>Tempat cahaya selalu berderang Tempat udara selalu bersih.<br>Tempat angin selalu nikmat<br>[.......................]</blockquote><br>Larik bermajas personifikasi yang tepat untuk melengkapi puisi di atas adalah...",
+      "opsi": [
+        "Tempat menari si burung camar",
+        "Di tempat sepi, di mana hanya",
+        "Di sana ku ingin berkubur",
+        "Di pundakmu wahai Ibuku",
+        "Di sanalah aku berteduh"
+      ],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "<em>Cermati penggalan naskah drama berikut!</em><br><br><strong>Putra</strong>: \"Tia, mengapa kamu masuk SMK.\"<br><strong>Tiara</strong> :............................................................<br><strong>Putra</strong>: \"Oh, begitu. Tapi, apa lulus SMA tidak bisa bekerja?\"<br><strong>Tiara</strong>: \"Kata guruku, tujuan SMK adalah membekali siswa agar bisa hidup mandiri. Sementara kalau tujuan SMA agar siswanya mampu mengembangkan ilmunya.\"<br><br>Kalimat dialog yang tepat untuk melengkapi naskah drama yang rumpang di atas adalah....",
+      "opsi": [
+        "Aku ingin cepat bekerja, Put",
+        "Iya, itu sudah menjadi cita-citaku",
+        "Orang tuaku yang menginginkan aku masuk SMK",
+        "Sebenarnya akupun inginnya masuk SMA",
+        "Jangan tanya seperti itu aku jadi sedih"
+      ],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Di persimpangan yang ada traffic light, sering terpampang tulisan'belok kiri ikuti lampu.' Pada prakteknya, para pengendara langsung belok kiri tanpa mengindahkan rambu-rambu tersebut. Hal ini merupakan pelanggaran lalu lintas yang kwantitasnya terbanyak.<br><br>Perbaikan kata yang tidak tepat pada paragraf tersebut adalah...",
+      "opsi": [
+        "Lampu merah, praktiknya",
+        "Lampu merah, kuantitasnya",
+        "Praktiknya, kuantitasnya",
+        "Lampu merah, praktiknya, kuantitasnya",
+        "Lampu, kuantitasnya, praktiknya"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "<em>Cermati teks eksplanasi berikut!</em><br><br>Kerusakan lingkungan hidup dan efeknya terus berlangsung dan terjadi. Manusia cenderung untuk menangisi nasibnya. Lama-kelamaan tangisan terhadap nasib itu terlupakan dan dianggap sebagai embusan angin yang berlalu. Bekas tangisan karena efek dari kerusakan lingkungan yang dialaminya hanya tinggal menjadi suatu memori untuk dikisahkan. <strong>Karena</strong>, perlu diingat bahwa tidaklah cukup jika manusia hanya sebatas menangisi nasibnya, <strong>maka</strong> pada kenyataannya tidak pernah sadar bahwa semua kejadian tersebut adalah hasil dari perilaku dan tindakan yang patut diperbaiki dan diubah.<br><br>Konjungsi yang tepat untuk memperbaiki kata yang bercetak tebal adalah....",
+      "opsi": ["sebab, maka", "namun, maka", "sebab, dan", "dan, tetapi", "namun, tetapi"],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "<em>Bacalah kutipan teks eksposisi berikut!</em><br><br>Dinas Kebudayaan dan Pariwisata Kota Surabaya mempromosikan <strong>festival</strong> layang-layang <strong>tahun</strong> 2013 <strong>berskala</strong> nasional dengan aneka bentuk, <strong>motiv</strong>, dan warna. Pemilihan kawasan Taman Ria sebagai lokasi karena memenuhi <strong>syarat</strong> untuk menerbangkan layang-layang yaitu tidak adanya kabel dan <strong>faktor</strong> angin yang cukup kencang. Ada 30 kelompok layang-layang yang sudah memberikan <strong>konfirmasi</strong> untuk hadir sebagai peserta. <strong>Koordinator</strong> festifal mengatakan bahwa pelaksanaan <strong>lomba</strong> tahun ini berbeda dengan tahun sebelumnya yakni ada tiga <strong>kategori</strong> lomba.<br><br>Kata berbercetak tebal yang penulisannya tidak sesuai dengan ejaan dalam paragraf tersebut adalah....",
+      "opsi": [
+        "faktor, tahun",
+        "festival, motiv",
+        "kategori, syarat",
+        "lomba, konfirmasi",
+        "koordinator, skala"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Sebuah negosiasi bisa dilakukan beberapa orang sekaligus, <em>kecuali</em>...",
+      "opsi": ["Seorang diri", "2 orang", "4 orang", "10 orang", "8 orang"],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Catatan perjalanan hidup seseorang yang ditulis oleh orang lain disebut......",
+      "opsi": ["Diary", "Biografi", "Biodata", "Autobiografi", "Daftar pustaka"],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "<em>Bacalah penggalan latar belakang proposal berikut!</em><br><br>Baleganjur adalah gamelan tradisional yang digunakan pada saat upacara keagamaan. Baleganjur merupakan sarana menyalurkan bakat dalam bidang seni tradisional. Oleh karena itu, dalam rangka menyambut HUT Kota Denpasar akan diadakan lomba Baleganjur antarpemuda. Melalui lomba ini, pemuda diharapkan dapat menghargai gamelan tradisional Bali.<br><br>Tujuan proposal yang tepat berdasarkan latar belakang tersebut adalah.....",
+      "opsi": [
+        "ajang berkumpul bagi para pemuda",
+        "meningkatkan kreativitas pemuda dalam kesenian tradisional",
+        "mengetahui kesenian tradisional yang ada di Bali",
+        "menarik minat pemuda terhadap kesenian modern",
+        "menambah pengetahuan pemuda tentang Baleganjur"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "<strong>Cermati kutipan cerpen berikut!</strong><br><br><blockquote>Aku sendiri tidak mampu merumuskan, apakah aku kalah atau menang sebagaimana istriku juga tidak menimbulkan kesan, bahwa dia menang atau kalah dalam peperangan yang disulut dalam rumah tangganya, rumah tanggaku, rumah tangga kami. Aku pasrah. Dan kepasrahanku memang tindak lanjut dari penerimaanku terhadap takdir. Biarpun tidak mutlak demikian, akan tetapi aku belum menemukan jalan kecuali pasrah. Aku pasrah menerima keadaan, biarpun aku belum ingin berhenti menghadang dan menantang nasib.</blockquote><br>Watak tokoh aku dalam kutipan tersebut adalah ....",
+      "opsi": ["penakut", "berani", "mengalah", "teliti", "sabar"],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Bacalah penggalan teks biografi berikut!<br><br>Najwa Shihab, S.H., LL.M. adalah seorang pembawa acara, jurnalis, aktris, feminis, sekaligus aktivis media sosial Indonesia. Najwa merupakan putri kedua Quraish Shihab, Menteri Agama Republik Indonesia pada era Kabinet Pembangunan VII, dan keponakan dari politikus Alwi Shihab. Ia menikah dengan Ibrahim Sjarief Assegaf pada tahun 1997 dan sudah dikaruniai satu orang anak laki-laki bernama Izzat Assegaf.<br><br>Penggalan teks biografi tersebut termasuk bagian....",
+      "opsi": ["peristiwa penting", "reorientasi", "simpulan", "orientasi", "koda"],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "Setelah menyelesaikan pendidikannya di Universitas Indonesia, Tere Liye memulai kariernya sebagai seorang akuntan sesuai dengan latar belakang pendidikannya. Setiap hari, ia harus bergelut dengan tumpukan tugas kantor yang seolah tidak pernah habis. Selain menjadi seorang akuntan, Tere Liye juga aktif menjadi seorang penulis. Kegiatan menulis buku- buku fiksi, khususnya novel, telah menjadi hobinya sejak duduk di bangku kuliah. Berkat hobinya itu, ia telah berhasil melahirkan karya berupa novel, cerpen, dan sajak. Bahkan, beberapa karyanya, seperti Hafalan Sholat Delisa dan Bidadari- Bidadari Surga, telah diangkat ke layar lebar.<br><br>Pokok informasi yang terdapat dalam kutipan teks biografi tersebut adalah....",
+      "opsi": [
+        "Tere Liye adalah alumnus universitas indonesia",
+        "Tere Liye lebih suka menulis cerpen, novel dan sajak",
+        "sebagai seorang akuntan, Tere Liye harus bekerja giat",
+        "Tere Liye memulai kariernya sebagai seorang akuntan",
+        "beberapa karya Tere Liye telah diangkat ke layar lebar"
+      ],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "<em>Cermati kalimat berikut!</em><br><br>Kebersihan lingkungan menciptakan lingkungan yang sehat [...........] tidak menjadi sarang berbagai penyakit.<br><br>Kata yang tepat untuk melengkapi kalimat rumpang tersebut adalah.....",
+      "opsi": ["lalu", "yakni", "sehingga", "kemudian", "adalah"],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Perhatikan kalimat-kalimat di bawah ini :<br><ol type='1'><li>Pemberian penghargaan dapat menstimulasi semangat berkarya pemuda.</li><li>Kurangnya apresiasi dapat mengakibatkan malasnya pemuda dalam berkarya.</li><li>Tono menabung dengan tujuan ingin membeli mobil baru.</li><li>Bu Ina menyeduhkan teh hangat yang sangat manis sekali ke dalam cangkir kami.</li></ol><br>Kalimat tidak efektif ditunjukkan pada kalimat nomor ...",
+      "opsi": ["1", "2", "3", "4", "5"],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "Dimanapun kita berada akan tetap terbiasa hidup bersih jika kita telah <u>dibiasakan</u> di rumah. Kata bergaris bawah pada kalimat di atas sebaiknya diperbaiki dengan kata.....",
+      "opsi": ["biasa-biasa", "membiasakannya", "biasa saja", "tak biasa", "luar biasa"],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "<em>Terima kasih banyak telah sudi memberikan tumpangan pada saya, saya sangat merasa tertolong!</em><br><br>Kesalahan penggunaan tanda baca pada kalimat di atas ialah ...",
+      "opsi": [
+        "pada awal kalimat dan akhir kalimat seharusnya diberi tanda petik (\")",
+        "diakhir kalimat seharusnya diberi tanda tanya (?)",
+        "setelah kata \"terima kasih\" seharusnya diberi tanda koma(,)",
+        "setelah kata \"tertolong\" seharusnya diberi tanda titik (.) bukan tanda seru (!)",
+        "seharusnya tidak diberi tanda baca"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "<em>Bacalah paragraf berikut dengan saksama!</em><br><br>Koperasi mempunyai prinsip dasar menyejahterakan seluruh anggotanya dan sebagai kekuatan penyeimbang dalam...................ekonomi. koperasi perlu dikembangkan dengan membentuk jaringan kerja mitra antarkoperasi dari berbagai dunia. Tidak adanya koperasi, usaha kecil menengah sulit bersaing dengan perusahaan-perusahaan multinasional, yang dikelola dengan mengedepankan prinsip........., efisiensi, dan...............<br><br>Kata serapan yang tepat untuk melengkapi titik-titik pada paragraf tersebut adalah.....",
+      "opsi": [
+        "sistem, efektivitas dan produktivitas",
+        "sistem, efektivitas dan produktifitas",
+        "sistem, efektifitas dan produktifitas",
+        "sistim, efektivitas dan produktifitas",
+        "sistim, efektifitas dan produktifitas"
+      ],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Sepak terjang Wikan Sakarinto dalam dunia pendidikan vokasi terus melejit. Kiprahnya sebagai Dekan Sekolah Vokasi UGM sukses membawanya menduduki jabatan Direktur Jenderal Pendidikan Vikasi Kementerian Pendidikan dan Kebudayaan Republik Indonesia pada tahun 2020. Beliau resmi dilantik pada tanggal 08 Mei 2020 oleh Menteri Pendidikan dan Kebudayaan, Nadiem Makarim. Setelah dilantik untuk jabatan tersebut. Beliau menggagas konsep \"pernikahan massal\" antara pendidikan vokasi dengan dunia industri dan dunia kerja. Menurut kedua unsur tersebut harus mampu mencapai tahap \"menikah\" yaitu dengan membuat kolaborasi yang kuat dan erat. Pendidikan vokasi yang meliputi SMK, pendidikan tinggi vokasi, dan lembaga pelatihan keterampilan harus bersinergi erat dengan industri dan dunia kerja agar lulusan dapat menjadi tenaga yang andal dan memenuhi kebutuhan industri.<br><br>Pronomina yang digunakan dalam penggalan teks biografi tersebut adalah....",
+      "opsi": ["ia", "dia", "mereka", "saya", "beliau"],
+      "jawaban": "E"
+    },
+    {
+      "pertanyaan": "Berikut yang bukan merupakan karakeristik sebuah iklan adalah ....",
+      "opsi": [
+        "bersifat persuasif",
+        "tampilannya menarik",
+        "berisi penjelasan suatu produk",
+        "bahasa yang digunakan informatif",
+        "menjelaskan langkah penggunaan produk"
+      ],
+      "jawaban": "E"
+    },
+    {
+      "pertanyaan": "Iklan dirancang dengan tujuan membujuk konsumen agar tertarik untuk membeli produk yang ditawarkan. Hal tersebut merupakan salah satu fungsi iklan yang disebut.....",
+      "opsi": ["informing", "persuading", "reminding", "assisting", "adding value"],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Cermati iklan berikut.<br><br><img src='soal/img/indo/g34.jpg'><br><br>Iklan tersebut termasuk jenis iklan...",
+      "opsi": ["penawaran", "permintaan", "komersial", "pemberitahuan", "layanan masyarakat"],
+      "jawaban": "E"
+    },
+    {
+      "pertanyaan": "Kalimat yang disertakan dalam sebuah iklan umumnya digunakan untuk menggugah para pembaca atau pendengarnya. Oleh karena itu, bahasa iklan harus bersifat......",
+      "opsi": ["naratif", "imajinatif", "deskriptif", "persuasif", "argumentatif"],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "Dilihat dari media penyebarannya, iklan yang ditayangkan di Facebook atau YouTube tergolong jenis iklan...",
+      "opsi": ["cetak", "niaga", "penawaran", "elektronik", "media digital"],
+      "jawaban": "E"
+    },
+    {
+      "pertanyaan": "Bacalah kalimat-kalimat berikut.<br><ol type='1'><li>Ayo, segera miliki bukunya!</li><li>MilkCho, hadir dengan varian rasa baru.</li><li>Lapar tapi malas keluar? Yuk, pesan online saja!</li><li>Tersedia pulsa dan kuota internet di Berkah Cell.</li><li>Mari terapkan 3M: mencuci tangan, memakai masker, dan menjaga jarak.</li></ol><br>Kalimat persuasif berdasarkan kalimat-kalimat tersebut ditunjukkan nomor",
+      "opsi": [
+        "(1), (2), dan (3)",
+        "(1), (3), dan (5)",
+        "(2), (3), dan (4)",
+        "(2), (3), dan (5)",
+        "(3), (4), dan (5)"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "<br><img src='soal/img/indo/g38.jpg'><br>Pesan yang terkandung pada gambar anekdot di atas adalah...",
+      "opsi": [
+        "Siswa yang sedang melihat ke arah jendela",
+        "Guru sedang memarkirkan mobil ambulance",
+        "Cacing-cacing berbicara",
+        "Makanan bercacing menyebabkan keracunan maka harus tetap berhati-hati",
+        "Setelah makan nasi siswa akan diajak jalan-jalan naik mobil ambulace"
+      ],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "Struktur iklan terbagi menjadi......",
+      "opsi": ["1", "2", "3", "4", "5"],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Menyusun teks iklan harus memenuhi AIDA....",
+      "opsi": [
+        "Attention- interest- desire- action",
+        "Attention -- internal -- debian -- action",
+        "Atlantis -- internal -- debian - action",
+        "Atlantik -- interest -- desire -- actual",
+        "Attention -- Impact -- debire - actual"
+      ],
+      "jawaban": "A"
     }
   ],
   "essay": [
-    { "pertanyaan": "Tuliskan contoh kalimat menggunakan majas personifikasi!" },
-    { "pertanyaan": "Apa perbedaan paragraf deduktif dan induktif?" }
+    {
+      "pertanyaan": "<em>Perhatikan iklan berikut !</em><br><br><img src='soal/img/indo/g1es.jpg'><br><br>Berdasarkan isi iklan di atas termasuk ke dalam iklan?"
+    },
+    {
+      "pertanyaan": "Apa perbedaan iklan komersial dan non komersial?"
+    },
+    {
+      "pertanyaan": "<em>Perhatikan penulisan alamat surat berikut !</em><br><br>Yth Kepala Dusun Mertisari<br>Jalan Widara no 5, Dusun Mertisari, Kabupaten Blitar Jawa Tengah 66111.<br><br>Tuliskan perbaikan dari penulisan alamat tujuan surat di atas!"
+    },
+    {
+      "pertanyaan": "Dalam membuat makalah, Afrizal mengambil referensi dari buku berikut.<br><table><tr><td>Judul Buku</td><td>:</td><td>Teori Pengkajian Fiksi</td></tr><tr><td>Pengarang</td><td>:</td><td>Burhan Nurgiyantoro</td></tr><tr><td>Tahun Terbit</td><td>:</td><td>2010</td></tr><tr><td>Penerbit</td><td>:</td><td>Gadjah Mada University Press</td></tr><tr><td>Kota Terbit</td><td>:</td><td>Yogyakarta</td></tr></table><br>Tulislah daftar pustaka yang tepat berdasarkan data buku di atas!"
+    },
+    {
+      "pertanyaan": "Tuliskan 3 contoh slogan iklan yang kamu ketahui!"
+    }
   ]
 }

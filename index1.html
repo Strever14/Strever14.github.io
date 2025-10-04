@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website 1 - Soal</title>
+  <!-- MathJax untuk Formula Matematika -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      svg: {
+        fontCache: 'global'
+      },
+      startup: {
+        typeset: false
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
+  
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #185a9d, #43cea2);
+      margin: 0;
+      padding: 15px;
+      color: #fff;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      backdrop-filter: blur(6px);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      background: rgba(0,0,0,0.2);
+      padding: 10px;
+      border-radius: 8px;
+    }
+    h3 {
+      margin-top: 25px;
+      border-bottom: 2px solid rgba(255,255,255,0.3);
+      padding-bottom: 5px;
+    }
+    ol {
+      padding-left: 18px;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin: 4px 0;
+      padding: 6px 10px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    label:hover {
+      background: rgba(255,255,255,0.2);
+    }
+    textarea {
+      width: 93%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      resize: vertical;
+      font-size: 15px;
+      margin-top: 5px;
+    }
+    button {
+      display: block;
+      margin: 20px auto 0;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      background: #e91e63;
+      color: #fff;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #c2185b;
+    }
+    
+    /* Styling untuk MathJax */
+    .soal-text {
+      line-height: 1.6;
+    }
+    .soal-text img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 10px 0;
+      border: 2px solid rgba(255,255,255,0.3);
+      display: block;
+    }
+
+    /* Styling untuk audio player di soal */
+    .soal-text audio {
+      width: 100%;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+    
+    .soal-text audio:focus {
+      outline: 2px solid rgba(255,255,255,0.5);
+    }
+    
+    /* Styling khusus untuk audio controls */
+    .soal-text audio::-webkit-media-controls-panel {
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+    }
+    
+    .soal-text audio::-webkit-media-controls-play-button,
+    .soal-text audio::-webkit-media-controls-volume-slider,
+    .soal-text audio::-webkit-media-controls-mute-button {
+      filter: invert(1);
+    }
+
+    /* Styling untuk gambar di opsi jawaban */
+    label img {
+      max-width: 60%;
+      height: auto;
+      border-radius: 6px;
+      margin: 10px 0;
+      border: 1px solid rgba(255,255,255,0.2);
+      display: block;
+    }
+
+    /* Untuk opsi jawaban yang berisi gambar */
+    .label-with-image {
+      padding: 10px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 8px;
+    }
+
+    .MathJax {
+      color: #fff !important;
+    }
+    .MathJaxDisplay {
+      margin: 15px 0 !important;
+      padding: 15px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      text-align: center;
+      overflow-x: auto;
+    }
+    mjx-container[jax="SVG"] {
+      color: white !important;
+    }
+    
+    /* Responsif untuk HP */
+    @media (max-width: 600px) {
+      body { padding: 10px; }
+      .container { padding: 15px; }
+      h1 { font-size: 20px; }
+      h2 { font-size: 18px; }
+      h3 { font-size: 16px; }
+      button { width: 100%; }
+      .MathJaxDisplay {
+        padding: 10px;
+        margin: 10px 0 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📘 Website 1 - Soal Hari Ini</h1>
+    <div id="content"></div>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script>
+    if (localStorage.getItem("isLoggedIn1") !== "true") {
+      window.location.href = "login.html";
+    }
+
+    let hari = new Date().getDay(); // 0=minggu,1=senin dst
+    if (hari === 0 || hari === 6) hari = 1; // fallback ke Senin
+
+    async function loadSoal() {
+      try {
+        const API_KEY = "AIzaSyBhLPNX7e0sA8VIy_jlvBKzl1qHYURHDnY";
+        const SHEET_ID = "1LGn80ScYTUMXiTeH-Q-69Cd-RHZRJjf7q9c_GkV4tsk";
+        const RANGE = "Sheet1!A1:G6"; // sesuaikan dengan range sheet
+        const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${RANGE}?key=${API_KEY}`;
+
+        const response = await fetch(url);
+        const datas = await response.json();
+
+        // Ambil mapel sesuai hari (baris) dan site1 (kolom ke-2)
+        let status = datas.values[hari][1];
+        let mapel1 = datas.values[hari][2];
+        let mapel2 = datas.values[hari][3];
+        let mapel3 = datas.values[hari][4];
+        let mapel;
+        
+        if (status && status.toLowerCase() === "1"){
+          mapel = mapel1;
+        }else if (status && status.toLowerCase() === "2"){
+          mapel = mapel2;
+        }else{
+          mapel = mapel3;
+        }
+        
+
+        // Load soal JSON sesuai mapel
+        let resSoal = await fetch(`../soal/${mapel}.json`);
+        let data = await resSoal.json();
+
+        let html = `<h2>${mapel.replace("_", " ").toUpperCase()}</h2>`;
+
+        // Pilihan Ganda - GUNAKAN innerHTML
+        html += "<h3>Pilihan Ganda</h3><ol>";
+        data.pilihan_ganda.slice(0,35).forEach((q,i) => {
+          html += `<li><div class="soal-text">${q.pertanyaan}</div><br>`;
+          const abjad = ["A", "B", "C", "D", "E"];
+          q.opsi.forEach((o, j) => {
+          // Cek apakah opsi mengandung gambar
+          const hasImage = o.includes('<img');
+          const labelClass = hasImage ? 'label-with-image' : '';
+          html += `<label class="${labelClass}"><input type="radio" name="pg${i}"> ${abjad[j]}. ${o}</label>`;
+          });
+          html += "</li>";
+        });
+        html += "</ol>";
+      
+        // Essay
+        html += "<h3>Essay</h3><ol>";
+        data.essay.slice(0,5).forEach(q => {
+          html += `<li><div class="soal-text">${q.pertanyaan}</div><br><textarea rows="3"></textarea></li>`;
+        });
+        html += "</ol>";
+      
+        document.getElementById("content").innerHTML = html;
+
+        // Render ulang konten HTML untuk memastikan gambar dan MathJax terbaca
+        document.querySelectorAll('.soal-text').forEach(element => {
+          const htmlContent = element.innerHTML;
+          element.innerHTML = htmlContent;
+        });
+
+        // Tunggu MathJax siap lalu render formula matematika
+        if (window.MathJax) {
+          // Cek jika MathJax sudah loaded
+          const checkMathJax = setInterval(() => {
+            if (window.MathJax.typesetPromise) {
+              clearInterval(checkMathJax);
+              window.MathJax.typesetPromise().then(() => {
+                console.log("MathJax rendering completed!");
+              }).catch(err => {
+                console.error("MathJax error:", err);
+              });
+            }
+          }, 100);
+
+          // Timeout fallback
+          setTimeout(() => {
+            if (window.MathJax.typesetPromise) {
+              window.MathJax.typesetPromise();
+            }
+          }, 2000);
+        }
+
+      } catch (err) {
+        document.getElementById("content").innerHTML = "<p>Soal tidak bisa dimuat.</p>";
+        console.error("Error:", err);
+      }
+    }
+
+     // Function untuk refresh MathJax jika diperlukan
+    function refreshMath() {
+      if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise();
+      }
+    }
+
+    loadSoal();
+
+    function logout() {
+      localStorage.removeItem("isLoggedIn1");
+      window.location.href = "login.html";
+    }
+</script>
+</body>
+</html>

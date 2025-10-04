@@ -1,0 +1,29 @@
+{
+  "pilihan_ganda": [
+    {
+      "pertanyaan": "Apa sinonim kata 'Indah'?",
+      "opsi": ["Cantik", "Buruk", "Kotor", "Jelek", "Biasa"],
+      "jawaban": "Cantik"
+    },
+    {
+      "pertanyaan": "Manakah yang termasuk majas?",
+      "opsi": ["Personifikasi", "Pythagoras", "Newton", "Integral", "Atom"],
+      "jawaban": "Personifikasi"
+    },
+    {
+    "pertanyaan": "Dengarkan audio berikut dan tentukan jenis suara yang didengar:<br><audio controls><source src='soal/audio/indo/river.ogg' type='audio/mpeg'>Browser tidak support audio</audio>",
+      "opsi": [
+        "Suara burung",
+        "Suara air mengalir", 
+        "Suara angin",
+        "Suara kendaraan",
+        "Suara manusia"
+      ],
+      "jawaban": "Suara burung"
+    }
+  ],
+  "essay": [
+    { "pertanyaan": "Tuliskan contoh kalimat menggunakan majas personifikasi!" },
+    { "pertanyaan": "Apa perbedaan paragraf deduktif dan induktif?" }
+  ]
+}

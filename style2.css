@@ -1,0 +1,428 @@
+/* Variabel CSS untuk konsistensi - Tema berbeda untuk Website 2 */
+    :root {
+      --primary-color: #7209b7;
+      --secondary-color: #560bad;
+      --accent-color: #b5179e;
+      --light-color: #f8f9fa;
+      --dark-color: #212529;
+      --success-color: #4bb543;
+      --danger-color: #e63946;
+      --warning-color: #ff9e00;
+      --border-radius: 12px;
+      --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e2d1f9 100%);
+      margin: 0;
+      padding: 20px;
+      color: var(--dark-color);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: var(--border-radius);
+      padding: 30px;
+      box-shadow: var(--box-shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: var(--primary-color);
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 15px;
+    }
+
+    h1::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: var(--accent-color);
+      border-radius: 2px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 15px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+    }
+
+    h3 {
+      margin-top: 30px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e9ecef;
+      color: var(--secondary-color);
+      font-weight: 600;
+      position: relative;
+    }
+
+    h3::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 60px;
+      height: 2px;
+      background: var(--accent-color);
+    }
+
+    h4 {
+      text-align: center;
+      margin-bottom: 1px;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 7px;
+      border-radius: 40px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);;
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 25px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: var(--border-radius);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      transition: var(--transition);
+    }
+
+    li:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .question-container {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: flex;
+      align-items: flex-start;
+      margin: 8px 0;
+      padding: 12px 15px;
+      background: white;
+      border-radius: 8px;
+      transition: var(--transition);
+      cursor: pointer;
+      border: 1px solid #e9ecef;
+    }
+
+    label:hover {
+      background: #f9f1ff;
+      border-color: var(--primary-color);
+    }
+
+    label input[type="radio"] {
+      margin-right: 10px;
+      margin-top: 3px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border-radius: 8px;
+      border: 1px solid #ced4da;
+      resize: vertical;
+      font-size: 15px;
+      margin-top: 10px;
+      font-family: inherit;
+      transition: var(--transition);
+    }
+
+    textarea:focus {
+      outline: none;
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px rgba(114, 9, 183, 0.15);
+    }
+
+    button {
+      display: block;
+      margin: 30px auto 0;
+      padding: 12px 30px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      background: var(--primary-color);
+      color: white;
+      transition: var(--transition);
+      box-shadow: 0 4px 6px rgba(114, 9, 183, 0.2);
+    }
+
+    button:hover {
+      background: var(--secondary-color);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px rgba(114, 9, 183, 0.3);
+    }
+
+    /* Styling untuk MathJax */
+    .soal-text {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .soal-text img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 10px 0;
+      border: 1px solid #e9ecef;
+      display: block;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    /* STYLING KHUSUS UNTUK TABEL - PERBAIKAN UTAMA */
+    .soal-text table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+      font-size: 14px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .soal-text table th,
+    .soal-text table td {
+      padding: 10px 12px;
+      text-align: center;
+      border: 1px solid #dee2e6;
+    }
+
+    .soal-text table th {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      font-weight: 600;
+    }
+
+    .soal-text table tr:nth-child(even) {
+      background-color: #f8f9fa;
+    }
+
+    .soal-text table tr:hover {
+      background-color: #e9ecef;
+    }
+
+    /* Container untuk tabel yang responsif */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 15px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Styling untuk audio player di soal */
+    .soal-text audio {
+      width: 100%;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+    
+    .soal-text audio:focus {
+      outline: 2px solid var(--primary-color);
+    }
+    
+    /* Styling khusus untuk audio controls */
+    .soal-text audio::-webkit-media-controls-panel {
+      background: #f8f9fa;
+      border-radius: 8px;
+    }
+    
+    /* Styling untuk gambar di opsi jawaban */
+    label img {
+      max-width: 60%;
+      height: auto;
+      border-radius: 6px;
+      margin: 5px 0;
+      border: 1px solid #e9ecef;
+      display: block;
+    }
+
+    /* Untuk opsi jawaban yang berisi gambar */
+    .label-with-image {
+      padding: 15px;
+      background: white;
+      border-radius: 8px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .label-with-image .option-text {
+      margin-top: 8px;
+    }
+
+    .MathJax {
+      color: var(--dark-color) !important;
+    }
+
+    .MathJaxDisplay {
+      margin: 15px 0 !important;
+      padding: 15px;
+      background: #f8f9fa;
+      border-radius: 10px;
+      text-align: center;
+      overflow-x: auto;
+      border: 1px solid #e9ecef;
+    }
+
+    mjx-container[jax="SVG"] {
+      color: var(--dark-color) !important;
+    }
+
+    /* Progress indicator */
+    .progress-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: var(--border-radius);
+    }
+
+    .progress-item {
+      text-align: center;
+      flex: 1;
+      padding: 10px;
+      border-radius: 8px;
+      transition: var(--transition);
+    }
+
+    .progress-item.active {
+      background: var(--primary-color);
+      color: white;
+    }
+
+    /* Responsif untuk HP - PERBAIKAN TABEL PADA MOBILE */
+    @media (max-width: 768px) {
+      body { 
+        padding: 10px; 
+      }
+      
+      .container { 
+        padding: 20px 15px; 
+      }
+      
+      h1 { 
+        font-size: 22px; 
+      }
+      
+      h2 { 
+        font-size: 18px; 
+        padding: 12px;
+      }
+      
+      h3 { 
+        font-size: 16px; 
+      }
+      
+      button { 
+        width: 100%; 
+      }
+      
+      .MathJaxDisplay {
+        padding: 10px;
+        margin: 10px 0 !important;
+      }
+      
+      li {
+        padding: 15px;
+      }
+      
+      label {
+        padding: 10px;
+      }
+      
+      .progress-container {
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      /* Styling khusus tabel untuk mobile */
+      .soal-text table {
+        font-size: 12px;
+        min-width: 600px; /* Memastikan tabel tetap bisa di-scroll horizontal */
+      }
+      
+      .soal-text table th,
+      .soal-text table td {
+        padding: 8px 10px;
+      }
+      
+      .table-container {
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+      }
+    }
+
+    .timer {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--primary);
+            color: red;
+            padding: 10px 15px;
+            border-radius: 50px;
+            box-shadow: var(--shadow);
+            font-weight: bold;
+            z-index: 100;
+        }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 20px;
+      }
+      
+      h2 {
+        font-size: 16px;
+      }
+      
+      .container {
+        padding: 15px 10px;
+      }
+      
+      /* Styling tabel untuk perangkat sangat kecil */
+      .soal-text table {
+        font-size: 11px;
+        min-width: 700px; /* Lebar minimum untuk tabel kompleks */
+      }
+      
+      .soal-text table th,
+      .soal-text table td {
+        padding: 6px 8px;
+      }
+    }

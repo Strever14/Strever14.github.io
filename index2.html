@@ -25,6 +25,103 @@
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
   </script>
   <link rel="stylesheet" href="style2.css">
+  <style>
+    /* Styles untuk Modal Konfirmasi */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+      animation: modalAppear 0.3s ease-out;
+    }
+
+    @keyframes modalAppear {
+      from {
+        opacity: 0;
+        transform: scale(0.8) translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    .modal-icon {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .modal-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .modal-message {
+      font-size: 16px;
+      margin-bottom: 25px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .modal-buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .modal-btn {
+      padding: 12px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      min-width: 100px;
+    }
+
+    .modal-btn-confirm {
+      background: #4CAF50;
+      color: white;
+    }
+
+    .modal-btn-confirm:hover {
+      background: #45a049;
+      transform: translateY(-2px);
+    }
+
+    .modal-btn-cancel {
+      background: #f44336;
+      color: white;
+    }
+
+    .modal-btn-cancel:hover {
+      background: #da190b;
+      transform: translateY(-2px);
+    }
+
+    .modal-btn:active {
+      transform: translateY(0);
+    }
+  </style>
 
 </head>
 <body>
@@ -34,8 +131,25 @@
     <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" 
     action="https://script.google.com/macros/s/AKfycbwOtVoRxWEK0JVgn6PwYHXKbTvzGPlqLRSb1D7TbZeeqMvDz502SEwHWNiJYwkeWltsUA/exec" id="my-form">
       <div id="content"></div>
-      <button class="btn btn-primary">Kirim</button>
+      <button type="button" class="btn btn-primary" onclick="showConfirmationModal()">Kirim</button>
     </form>
+
+    <!-- Modal Konfirmasi -->
+    <div id="confirmationModal" class="modal-overlay">
+      <div class="modal-content">
+        <div class="modal-icon">📝</div>
+        <div class="modal-title">Konfirmasi Submit</div>
+        <div class="modal-message">
+          Apakah Anda yakin ingin mengirim jawaban?<br>
+          Setelah dikirim, Anda tidak dapat mengubah jawaban lagi.
+        </div>
+        <div class="modal-buttons">
+          <button class="modal-btn modal-btn-cancel" onclick="hideConfirmationModal()">Batal</button>
+          <button class="modal-btn modal-btn-confirm" onclick="submitForm()">Ya, Kirim</button>
+        </div>
+      </div>
+    </div>
+
     <div class="timer"><h4 id="timer">120:00</h4></div>
     <button onclick="logout()">Logout</button>
   </div>
@@ -172,33 +286,37 @@
             }
         }
 
-        window.addEventListener("load", function() {
+       // Fungsi untuk modal konfirmasi
+        function showConfirmationModal() {
+          const modal = document.getElementById('confirmationModal');
+          modal.style.display = 'flex';
+        }
+      
+        function hideConfirmationModal() {
+          const modal = document.getElementById('confirmationModal');
+          modal.style.display = 'none';
+        }
+      
+        function submitForm() {
           const form = document.getElementById('my-form');
-          form.addEventListener("submit", function(e) {
-            e.preventDefault();
-            
-            // Tampilkan konfirmasi
-            const isConfirmed = confirm("Apakah Anda yakin ingin submit jawaban?");
-            
-            if (isConfirmed) {
-              const data = new FormData(form);
-              const action = e.target.action;
-              fetch(action, {
-                method: 'POST',
-                body: data,
-              })
-              .then(() => {
-                alert("Jawaban berhasil dikirim!");
-                logout(); // Logout setelah berhasil submit
-              })
-              .catch(error => {
-                console.error("Error:", error);
-                alert("Terjadi kesalahan saat mengirim jawaban.");
-              });
-            }
-            // Jika tidak dikonfirmasi, tidak melakukan apa-apa (tetap di halaman soal)
+          const data = new FormData(form);
+          const action = form.action;
+
+          fetch(action, {
+            method: 'POST',
+            body: data,
+          })
+          .then(() => {
+            hideConfirmationModal();
+            //alert("Jawaban berhasil dikirim!");
+            logout();
+          })
+          .catch(error => {
+            console.error("Error:", error);
+            alert("Terjadi kesalahan saat mengirim jawaban.");
+            hideConfirmationModal();
           });
-        });
+        }
         
         const timerInterval = setInterval(updateTimer, 1000);
 

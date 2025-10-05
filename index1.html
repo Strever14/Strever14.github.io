@@ -23,375 +23,132 @@
   <script type="text/javascript" id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
   </script>
-  
+  <link rel="stylesheet" href="style.css">
   <style>
-    /* Variabel CSS untuk konsistensi */
-    :root {
-      --primary-color: #4361ee;
-      --secondary-color: #3a0ca3;
-      --accent-color: #4cc9f0;
-      --light-color: #f8f9fa;
-      --dark-color: #212529;
-      --success-color: #4bb543;
-      --danger-color: #e63946;
-      --warning-color: #ff9e00;
-      --border-radius: 12px;
-      --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      --transition: all 0.3s ease;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-      margin: 0;
-      padding: 20px;
-      color: var(--dark-color);
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      background: white;
-      border-radius: var(--border-radius);
-      padding: 30px;
-      box-shadow: var(--box-shadow);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .container::before {
-      content: '';
-      position: absolute;
+    /* Styles untuk Modal Konfirmasi */
+    .modal-overlay {
+      display: none;
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      height: 5px;
-      background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
     }
 
-    h1 {
+    .modal-content {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
       text-align: center;
-      margin-bottom: 25px;
-      color: var(--primary-color);
-      font-weight: 700;
-      position: relative;
-      padding-bottom: 15px;
+      max-width: 400px;
+      width: 90%;
+      animation: modalAppear 0.3s ease-out;
     }
 
-    h1::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 80px;
-      height: 3px;
-      background: var(--accent-color);
-      border-radius: 2px;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 25px;
-      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-      color: white;
-      padding: 15px;
-      border-radius: var(--border-radius);
-      box-shadow: var(--box-shadow);
-    }
-
-    h3 {
-      margin-top: 30px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #e9ecef;
-      color: var(--secondary-color);
-      font-weight: 600;
-      position: relative;
-    }
-
-    h3::after {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 60px;
-      height: 2px;
-      background: var(--accent-color);
-    }
-
-    h4 {
-        text-align: center;
-        margin-bottom: 1px;
-        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-        color: white;
-        padding: 7px;
-        border-radius: 40px;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);;
+    @keyframes modalAppear {
+      from {
+        opacity: 0;
+        transform: scale(0.8) translateY(-20px);
       }
-
-    ol {
-      padding-left: 20px;
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
     }
 
-    li {
-      margin-bottom: 25px;
-      padding: 20px;
-      background: #f8f9fa;
-      border-radius: var(--border-radius);
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-      transition: var(--transition);
-    }
-
-    li:hover {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    }
-
-    .question-container {
+    .modal-icon {
+      font-size: 48px;
       margin-bottom: 15px;
     }
 
-    label {
-      display: flex;
-      align-items: flex-start;
-      margin: 8px 0;
-      padding: 12px 15px;
-      background: white;
-      border-radius: 8px;
-      transition: var(--transition);
-      cursor: pointer;
-      border: 1px solid #e9ecef;
-    }
-
-    label:hover {
-      background: #f1f3ff;
-      border-color: var(--primary-color);
-    }
-
-    label input[type="radio"] {
-      margin-right: 10px;
-      margin-top: 3px;
-    }
-
-    textarea {
-      width: 100%;
-      padding: 12px 15px;
-      border-radius: 8px;
-      border: 1px solid #ced4da;
-      resize: vertical;
-      font-size: 15px;
-      margin-top: 10px;
-      font-family: inherit;
-      transition: var(--transition);
-    }
-
-    textarea:focus {
-      outline: none;
-      border-color: var(--primary-color);
-      box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
-    }
-
-    button {
-      display: block;
-      margin: 30px auto 0;
-      padding: 12px 30px;
-      font-size: 16px;
-      font-weight: 600;
-      border-radius: 8px;
-      border: none;
-      cursor: pointer;
-      background: var(--primary-color);
-      color: white;
-      transition: var(--transition);
-      box-shadow: 0 4px 6px rgba(67, 97, 238, 0.2);
-    }
-
-    button:hover {
-      background: var(--secondary-color);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 8px rgba(67, 97, 238, 0.3);
-    }
-
-    /* Styling untuk MathJax */
-    .soal-text {
-      line-height: 1.6;
+    .modal-title {
+      font-size: 24px;
+      font-weight: bold;
       margin-bottom: 10px;
+      color: #333;
     }
 
-    .soal-text img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin: 10px 0;
-      border: 1px solid #e9ecef;
-      display: block;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    }
-
-    /* Styling untuk audio player di soal */
-    .soal-text audio {
-      width: 100%;
-      margin: 10px 0;
-      border-radius: 8px;
-    }
-    
-    .soal-text audio:focus {
-      outline: 2px solid var(--primary-color);
-    }
-    
-    /* Styling khusus untuk audio controls */
-    .soal-text audio::-webkit-media-controls-panel {
-      background: #f8f9fa;
-      border-radius: 8px;
-    }
-    
-    /* Styling untuk gambar di opsi jawaban */
-    label img {
-      max-width: 60%;
-      height: auto;
-      border-radius: 6px;
-      margin: 5px 0;
-      border: 1px solid #e9ecef;
-      display: block;
-    }
-
-    /* Untuk opsi jawaban yang berisi gambar */
-    .label-with-image {
-      padding: 15px;
-      background: white;
-      border-radius: 8px;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .label-with-image .option-text {
-      margin-top: 8px;
-    }
-
-    .MathJax {
-      color: var(--dark-color) !important;
-    }
-
-    .MathJaxDisplay {
-      margin: 15px 0 !important;
-      padding: 15px;
-      background: #f8f9fa;
-      border-radius: 10px;
-      text-align: center;
-      overflow-x: auto;
-      border: 1px solid #e9ecef;
-    }
-
-    mjx-container[jax="SVG"] {
-      color: var(--dark-color) !important;
-    }
-
-    .timer {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: var(--primary);
-            color: red;
-            padding: 10px 15px;
-            border-radius: 50px;
-            box-shadow: var(--shadow);
-            font-weight: bold;
-            z-index: 100;
-        }
-
-    /* Progress indicator */
-    .progress-container {
-      display: flex;
-      justify-content: space-between;
+    .modal-message {
+      font-size: 16px;
       margin-bottom: 25px;
-      background: #f8f9fa;
-      padding: 15px;
-      border-radius: var(--border-radius);
+      color: #666;
+      line-height: 1.5;
     }
 
-    .progress-item {
-      text-align: center;
-      flex: 1;
-      padding: 10px;
+    .modal-buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .modal-btn {
+      padding: 12px 30px;
+      border: none;
       border-radius: 8px;
-      transition: var(--transition);
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      min-width: 100px;
     }
 
-    .progress-item.active {
-      background: var(--primary-color);
+    .modal-btn-confirm {
+      background: #4CAF50;
       color: white;
     }
 
-    /* Responsif untuk HP */
-    @media (max-width: 768px) {
-      body { 
-        padding: 10px; 
-      }
-      
-      .container { 
-        padding: 20px 15px; 
-      }
-      
-      h1 { 
-        font-size: 22px; 
-      }
-      
-      h2 { 
-        font-size: 18px; 
-        padding: 12px;
-      }
-      
-      h3 { 
-        font-size: 16px; 
-      }
-      
-      button { 
-        width: 100%; 
-      }
-      
-      .MathJaxDisplay {
-        padding: 10px;
-        margin: 10px 0 !important;
-      }
-      
-      li {
-        padding: 15px;
-      }
-      
-      label {
-        padding: 10px;
-      }
-      
-      .progress-container {
-        flex-direction: column;
-        gap: 10px;
-      }
+    .modal-btn-confirm:hover {
+      background: #45a049;
+      transform: translateY(-2px);
     }
 
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 20px;
-      }
-      
-      h2 {
-        font-size: 16px;
-      }
-      
-      .container {
-        padding: 15px 10px;
-      }
+    .modal-btn-cancel {
+      background: #f44336;
+      color: white;
+    }
+
+    .modal-btn-cancel:hover {
+      background: #da190b;
+      transform: translateY(-2px);
+    }
+
+    .modal-btn:active {
+      transform: translateY(0);
     }
   </style>
+
 </head>
 <body>
   <div class="container">
     <h1>📘 Soal Hari Ini</h1>
-    
-    <div id="content"></div>
+
+    <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" 
+    action="https://script.google.com/macros/s/AKfycbwOtVoRxWEK0JVgn6PwYHXKbTvzGPlqLRSb1D7TbZeeqMvDz502SEwHWNiJYwkeWltsUA/exec" id="my-form">
+      <div id="content"></div>
+      <button type="button" class="btn btn-primary" onclick="showConfirmationModal()">Kirim</button>
+    </form>
+
+    <!-- Modal Konfirmasi -->
+    <div id="confirmationModal" class="modal-overlay">
+      <div class="modal-content">
+        <div class="modal-icon">📝</div>
+        <div class="modal-title">Konfirmasi Submit</div>
+        <div class="modal-message">
+          Apakah Anda yakin ingin mengirim jawaban?<br>
+          Setelah dikirim, Anda tidak dapat mengubah jawaban lagi.
+        </div>
+        <div class="modal-buttons">
+          <button class="modal-btn modal-btn-cancel" onclick="hideConfirmationModal()">Batal</button>
+          <button class="modal-btn modal-btn-confirm" onclick="submitForm()">Ya, Kirim</button>
+        </div>
+      </div>
+    </div>
+
     <div class="timer"><h4 id="timer">120:00</h4></div>
     <button onclick="logout()">Logout</button>
   </div>
@@ -434,6 +191,11 @@
         let data = await resSoal.json();
 
         let html = `<h2>${mapel.replace("_", " ").toUpperCase()}</h2>`;
+        html += `<input type="hidden" name="mapel" value="${mapel.replace("_", " ").toUpperCase()}">`;
+        html += "<strong>Nama : </strong>";
+          html += `<input type="Nama" name="nama" placeholder="Nama Lengkap" required><br>`;
+          html += "<strong>Kelas : </strong>";
+        html += `<input type="Kelas" name="kelas" placeholder="Kelas" required>`;
 
         // Pilihan Ganda - GUNAKAN innerHTML
         html += "<h3>Pilihan Ganda</h3><ol>";
@@ -445,7 +207,13 @@
           const hasImage = o.includes('<img');
           const labelClass = hasImage ? 'label-with-image' : '';
           const optionContent = hasImage ? `<div>${o}</div>` : o;
-          html += `<label class="${labelClass}"><input type="radio" name="pg${i}"> <span class="option-text">${abjad[j]}. ${optionContent}</span></label>`;
+           if(abjad[j] === q.jawaban)
+            {
+              nilai = 1;
+            }else{
+              nilai = 0;
+            }
+            html += `<label class="${labelClass}"><input type="radio" name="pg${i}" value="${nilai}"> <span class="option-text">${abjad[j]}. ${optionContent}</span></label>`;
           });
           html += "</li>";
         });
@@ -518,6 +286,38 @@
                 logout();
             }
         }
+
+        // Fungsi untuk modal konfirmasi
+        function showConfirmationModal() {
+          const modal = document.getElementById('confirmationModal');
+          modal.style.display = 'flex';
+        }
+      
+        function hideConfirmationModal() {
+          const modal = document.getElementById('confirmationModal');
+          modal.style.display = 'none';
+        }
+      
+        function submitForm() {
+          const form = document.getElementById('my-form');
+          const data = new FormData(form);
+          const action = form.action;
+
+          fetch(action, {
+            method: 'POST',
+            body: data,
+          })
+          .then(() => {
+            hideConfirmationModal();
+            //alert("Jawaban berhasil dikirim!");
+            logout();
+          })
+          .catch(error => {
+            console.error("Error:", error);
+            alert("Terjadi kesalahan saat mengirim jawaban.");
+            hideConfirmationModal();
+          });
+        }
         
         const timerInterval = setInterval(updateTimer, 1000);
 
@@ -530,6 +330,3 @@
   </script>
 </body>
 </html>
-
-
-

@@ -331,114 +331,114 @@
       "jawaban": "C"
     },
     {
-      "pertanyaan": "Perhatikan gambar di samping, gateway dari PC yang menuju internet adalah ....<br><img src='soal/img/kk-tkj/g31.png'>",
+      "pertanyaan": "Pada gambar diatas angka 4 menunjukkan ......<br><img src='soal/img/kk-tkj/g31.png'>",
       "opsi": [
-        "192.168.50.2",
-        "192.168.60.2",
-        "192.168.40.1",
-        "192.168.60.1",
-        "192.168.50.1"
+        "Mac address",
+        "Ip address",
+        "Identitas mikrotik",
+        "Versi routeros",
+        "Kode routeros"
       ],
       "jawaban": "D"
     },
     {
-      "pertanyaan": "Untuk menerjemahkan nama domain ke IP address dibutuhkan ....",
+      "pertanyaan": "Jika Anda tidak dapat masuk ke Winbox, langkah troubleshooting apa yang harus dilakukan untuk memulihkan akses?",
       "opsi": [
-        "DHCP server",
-        "DNS server",
-        "FTP server",
-        "Proxy server",
-        "Web server"
+        "Mematikan mesin virtual pada interface PC",
+        "Mematikan Interface ethernet pada PC",
+        "Merestart PC/laptop",
+        "Merestart Routerboard",
+        "Mematikan dhcp pada router"
+      ],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "Router Mikrotik memiliki fitur yang memungkinkan perangkat secara otomatis melakukan sinkronisasi waktu dengan server di internet. Fitur tersebut adalah ...",
+      "opsi": [
+        "DHCP Client",
+        "SNTP Client",
+        "NAT",
+        "Web Proxy",
+        "SNMP"
       ],
       "jawaban": "B"
     },
     {
-      "pertanyaan": "Untuk menggunakan masquerade pada Firewall NAT, Anda perlu menentukan?",
+      "pertanyaan": "Ada berbagai aplikasi yang bisa digunakan untuk mengakses Routerboard Mikrotik. Di bawah ini, mana yang bukan termasuk aplikasi untuk melakukan manajemen perangkat tersebut?",
       "opsi": [
-        "action = accept, out-interface, chain = src-nat",
-        "action = masquerade, out-interface, chain = src-nat",
-        "action = masquerade, in-interface, chain = src-nat",
-        "action = masquerade, out-interface, chain = dst-nat",
-        "action = masquerade, out-interface list, chain = src-nat"
+        "telnet",
+        "winbox",
+        "webfig",
+        "Putty",
+        "SSL"
+      ],
+      "jawaban": "E"
+    },
+    {
+      "pertanyaan": "Ketika melakukan ping dari Routerboard Mikrotik ke internet, hasilnya Request Time Out (RTO). Kecuali salah satu dari faktor berikut, apa yang perlu kita cek untuk memecahkan masalah konektivitas tersebut?",
+      "opsi": [
+        "NAT",
+        "DHCP Client",
+        "DNS",
+        "Kabel internet yang terhubung ke Routerboard mikrotik",
+        "layer7 protocol"
+      ],
+      "jawaban": "E"
+    },
+    {
+      "pertanyaan": "Dalam pembangunan jaringan hotspot wireless menggunakan Routerboard, mode wlan apa yang harus dipilih agar dapat berfungsi sebagai titik akses utama yang menghubungkan perangkat client secara langsung?",
+      "opsi": [
+        "PTP",
+        "Station",
+        "station bridge",
+        "WDS",
+        "AP Bridge"
+      ],
+      "jawaban": "E"
+    },
+    {
+      "pertanyaan": "Ketika lab sekolah anda membutuhkan jaringan 14 Unit Komputer dan 1 Server dengan topologi star maka yang akan dibutuhkan minimal :",
+      "opsi": [
+        "2 unit Switch 8 port dan Cable UTP Cat 5E",
+        "2 Unit Switch 16 port dan Cable STP Cat 6",
+        "1 Unit Switch 16 Port dan Cable UTP Cat 5e",
+        "1 Unit Switch 24 Port dan Cable UTP Cat 5e",
+        "1 Unit switch 48 port dan cabel STP Cat 6"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Sebuah lab memiliki jumlah komputer 24 buah untuk siswa, 1 komputer untuk guru dan 1 untuk server. Subnetmask yang paling optimal untuk lab tersebut adalah ....",
+      "opsi": [
+        "255.255.255.224",
+        "255.255.255.192",
+        "255.255.255.248",
+        "255.255.255.128",
+        "255.255.255.0"
+      ],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Seorang teknisi ingin mereset konfigurasi MikroTik. Ia menginginkan:<br>- Semua konfigurasi lama dihapus agar router kosong tanpa pengaturan bawaan,<br>- Router tidak menyimpan file cadangan (backup) konfigurasi sebelumnya,<br>- User login lama juga ikut dihapus.<br><br>Pengaturan opsi apa yang sebaiknya dipilih pada menu Reset Configuration?",
+      "opsi": [
+        "Centang Keep User Configuration dan Do Not Backup",
+        "Centang No Default Configuration dan Do Not Backup",
+        "Hanya centang Keep User Configuration",
+        "Centang CAPS Mode dan Do Not Backup",
+        "Hanya centang No Default Configuration"
       ],
       "jawaban": "B"
     },
     {
-      "pertanyaan": "Pada gambar dibawah ini<br><img src='soal/img/kk-tkj/g34.png'><br>yang berlaku sebagai dhcp server pada topologi tersebut adalah ether ....",
+      "pertanyaan": "Seorang teknisi jaringan ingin membatasi akses pengguna tertentu agar tidak bisa membuka situs tertentu melalui firewall. Ia menambahkan aturan dengan aksi \"Deny\" untuk alamat IP pengguna tersebut.<br>Apa tujuan penggunaan aksi \"Deny\" dalam kasus ini?",
       "opsi": [
-        "eth1",
-        "eth2",
-        "eth4",
-        "eth5",
-        "eth6"
+        "Mengizinkan akses ke jaringan",
+        "Menolak akses ke jaringan tertentu",
+        "Mempercepat koneksi internet",
+        "Mengatur prioritas lalu lintas",
+        "Membuka akses sementara"
       ],
-      "jawaban": "D"
-    },
-    {
-      "pertanyaan": "Perhatikan gambar dibawah ini.<br><img src='soal/img/kk-tkj/g35.png'><br>Sebuah PC client dihubungkan ke ether2 pada mikrotik dan dikonfigurasi IP Address seperti pada gambar diatas. Pada IP ether 2 mikrotik di setting IP Address 192.168.2.1/24 Namun terjadi kendala dimana PC tersebut tidak dapat terkoneksi ke internet. Kemungkinan penyebab dari masalah terbut adalah",
-      "opsi": [
-        "IP Address salah",
-        "Subnet Mask salah",
-        "Preferred DNS tidak diisi",
-        "Default gateway tidak diisi",
-        "Alternate DNS tidak diisi"
-      ],
-      "jawaban": "D"
-    },
-    {
-      "pertanyaan": "Saat melakukan konfigurasi beberapa Access Point (AP), seorang network administrator harus memperhatikan aspek kecepatan dan frekuensi. Frekuensi menentukan jumlah kanal (channel) yang tersedia Bila AP tersebut dipasang pada standar 802.11n, interval kanal sebesar 10 MHz, serta lebar kanal sebesar 20 MHz. Maka manakah konfigurasi kanal berikut ini yang harus dihindari oleh admin agar memperoleh interferensi paling minimum?",
-      "opsi": [
-        "2, 4, 5",
-        "1, 7, 13",
-        "1,8",
-        "2, 5, 8",
-        "2, 6, 12"
-      ],
-      "jawaban": "A"
-    },
-    {
-      "pertanyaan": "Anda memiliki router dengan konfigurasi<br>- IP Publik: 20.168.12.45/24<br>- Default gateway: 20.168.12.1<br>- Server DNS: 8.8.8.8, 8.8.4.4<br>- IP Lokal: 100.168.2.1/24<br>pilih konfigurasi yang benar pada PC klien untuk mengakses Internet",
-      "opsi": [
-        "IP: 100.168.0.1/24 gateway: 192.168.2.1",
-        "IP: 100.168.2.253/24 gateway: 202.168.0.1",
-        "IP: 100.168.1.223/24 gateway: 248.115.148.136",
-        "IP: 100.168.2.115/24 gateway: 192.168.2.1",
-        "IP: 100.168.2.2/24 gateway: 202.168.125.45"
-      ],
-      "jawaban": "D"
-    },
-    {
-      "pertanyaan": "Cara mengakses Router Mikrotik dibawah ini kecuali ...",
-      "opsi": [
-        "Telnet",
-        "Winbox",
-        "Komputer",
-        "SSH",
-        "Web Based"
-      ],
-      "jawaban": "C"
-    },
-    {
-      "pertanyaan": "Untuk mengakses mikrotik dalam mode text kita perlu menggunakan fitur SSH atau Telnet, makan untuk melanjukannya kita memerlukan aplikasi client seperti PuTTY dan aplikasi lainnya. Hal yang perlu diketahui sebelum melakukan proses remote adalah ..",
-      "opsi": [
-        "DNS Server",
-        "Mail Server",
-        "IP Address",
-        "Mac Address",
-        "Subnetmask"
-      ],
-      "jawaban": "C"
-    },
-    {
-      "pertanyaan": "Pada sebuah topologi jaringan dikonfigurasi ip router 10.10.10.1/24 tersambung ke switch dan dikonfigurasi ip router 192.168.1.2/24 yang tersambung dengan modem berapakah ip gateway dari client yang tersambung dengan switch ...",
-      "opsi": [
-        "10.10.10.1",
-        "192.168.1.1",
-        "10.10.10.2",
-        "192.168.1.2",
-        "Semua jawaban salah"
-      ],
-      "jawaban": "A"
+      "jawaban": "B"
     }
   ],
   "essay": [
@@ -455,7 +455,7 @@
       "pertanyaan": "Jelaskan secara singkat Sejarah teknologi VoIP di Indonesia !"
     },
     {
-      "pertanyaan": "Untuk menerjemahkan nama domain ke IP address dibutuhkan ...."
+      "pertanyaan": "Apa fungsi utama dari fitur NAT (Network Address Translation) di Mikrotik?"
     }
   ]
 }

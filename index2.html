@@ -125,6 +125,16 @@
       background: var(--accent-color);
     }
 
+    h4 {
+      text-align: center;
+      margin-bottom: 1px;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 7px;
+      border-radius: 40px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);;
+    }
+
     ol {
       padding-left: 20px;
     }
@@ -407,6 +417,19 @@
       }
     }
 
+    .timer {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--primary);
+            color: red;
+            padding: 10px 15px;
+            border-radius: 50px;
+            box-shadow: var(--shadow);
+            font-weight: bold;
+            z-index: 100;
+        }
+
     @media (max-width: 480px) {
       h1 {
         font-size: 20px;
@@ -438,6 +461,7 @@
     <h1>📘 Soal Hari Ini</h1>
     
     <div id="content"></div>
+    <div class="timer"><h4 id="timer">120:00</h4></div>
     <button onclick="logout()">Logout</button>
   </div>
 
@@ -543,6 +567,26 @@
       }
     }
 
+    // Timer functionality
+        let timeLeft = 120 * 60; // 120 minutes in seconds
+        const timerElement = document.getElementById('timer');
+        
+        function updateTimer() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            
+            if (timeLeft > 0) {
+                timeLeft--;
+            } else {
+                clearInterval(timerInterval);
+                //alert("Waktu telah habis! Silakan submit jawaban Anda.");
+                logout();
+            }
+        }
+        
+        const timerInterval = setInterval(updateTimer, 1000);
+
     loadSoal();
 
     function logout() {
@@ -552,4 +596,5 @@
   </script>
 </body>
 </html>
+
 

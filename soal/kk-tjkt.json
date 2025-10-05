@@ -1,0 +1,461 @@
+{
+  "pilihan_ganda": [
+    {
+      "pertanyaan": "Jika sebuah PC memiliki IP 192.168.1.10/24, maka network ID-nya adalah ...",
+      "opsi": [
+        "192.168.1.0",
+        "192.168.1.1",
+        "192.168.1.10",
+        "192.168.1.255",
+        "192.168.0.0"
+      ],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Perintah untuk mengecek konfigurasi IP di Linux adalah ...",
+      "opsi": [
+        "Netstat",
+        "Ping",
+        "ifconfig atau ip addr",
+        "nslookup",
+        "route"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Port default yang digunakan oleh SSH adalah ...",
+      "opsi": [
+        "20",
+        "21",
+        "22",
+        "23",
+        "25"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "File konfigurasi utama SSH server di Linux biasanya terdapat di ...",
+      "opsi": [
+        "/etc/ssh/sshd_config",
+        "/etc/ssh/ssh_config",
+        "/etc/network/interfaces",
+        "/etc/resolv.conf",
+        "/etc/dhcp/dhcpd.conf"
+      ],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Perintah untuk melakukan pengecekan DNS di Linux adalah ...",
+      "opsi": [
+        "Ping",
+        "Traceroute",
+        "nslookup atau dig",
+        "ifconfig",
+        "route"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "File konfigurasi utama DHCP server di Linux Debian adalah ...",
+      "opsi": [
+        "/etc/network/interfaces",
+        "/etc/resolv.conf",
+        "/etc/dhcp/dhcpd.conf",
+        "/etc/ssh/sshd_config",
+        "/etc/hosts"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Port default untuk FTP adalah ...",
+      "opsi": [
+        "21",
+        "22",
+        "23",
+        "25",
+        "53"
+      ],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Database server yang populer digunakan di Linux untuk ASJ adalah ...",
+      "opsi": [
+        "Microsoft Access",
+        "MySQL/MariaDB",
+        "Notepad++",
+        "Apache",
+        "Putty"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Perintah untuk login ke MySQL di Linux adalah ...",
+      "opsi": [
+        "mysql -u root --p",
+        "connect mysql",
+        "login mysql",
+        "start mysql",
+        "open mysql"
+      ],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "SQL query yang digunakan untuk menampilkan seluruh database adalah ...",
+      "opsi": [
+        "SHOW DATABASES;",
+        "LIST DATABASES;",
+        "SELECT * FROM databases;",
+        "DISPLAY DATABASES;",
+        "ALL DATABASES;"
+      ],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Tujuan utama keamanan jaringan adalah ...",
+      "opsi": [
+        "Mempercepat koneksi internet",
+        "Melindungi data dan informasi",
+        "Menambah jumlah perangkat",
+        "Mengurangi biaya jaringan",
+        "Memperbesar kapasitas server"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Serangan Denial of Service (DoS) bertujuan untuk ...",
+      "opsi": [
+        "Mencuri data pengguna",
+        "Menghapus sistem operasi",
+        "Membanjiri layanan agar tidak bisa digunakan",
+        "Mengamankan jaringan",
+        "Menyembunyikan identitas hacker"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Perangkat keras yang digunakan untuk memfilter lalu lintas jaringan adalah ...",
+      "opsi": [
+        "Router",
+        "Switch",
+        "Firewall",
+        "Access Point",
+        "Modem"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Teknik penyamaran identitas IP dengan menggunakan alamat IP palsu disebut ...",
+      "opsi": [
+        "Sniffing",
+        "Spoofing",
+        "Spamming",
+        "Hacking",
+        "Phishing"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "VPN digunakan untuk ...",
+      "opsi": [
+        "Memperbesar bandwidth internet",
+        "Membuat jaringan aman melalui jalur terenkripsi",
+        "Menghapus virus dari jaringan",
+        "Mengatur alamat IP",
+        "Memblokir iklan di internet"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Kriptografi adalah ilmu yang mempelajari ...",
+      "opsi": [
+        "Cara memperbaiki jaringan",
+        "Teknik enkripsi dan dekripsi data",
+        "Cara membuat server",
+        "Teknik mempercepat transfer data",
+        "Konfigurasi hardware jaringan"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Malware yang menyamar sebagai program normal disebut ...",
+      "opsi": [
+        "Worm",
+        "Trojan Horse",
+        "Spyware",
+        "Rootkit",
+        "Adware"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Proses mencatat aktivitas pengguna dalam jaringan disebut ...",
+      "opsi": [
+        "Auditing",
+        "Filtering",
+        "Sniffing",
+        "Spoofing",
+        "Logging"
+      ],
+      "jawaban": "E"
+    },
+    {
+      "pertanyaan": "Serangan yang bertujuan untuk menguping komunikasi di jaringan disebut ...",
+      "opsi": [
+        "Brute force",
+        "Sniffing",
+        "Spoofing",
+        "Phishing",
+        "Hijacking"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Kata sandi yang kuat sebaiknya terdiri dari ...",
+      "opsi": [
+        "Hanya huruf kecil",
+        "Hanya angka",
+        "Kombinasi huruf, angka, dan simbol",
+        "Nama lengkap pengguna",
+        "Tanggal lahir pengguna"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Teknik serangan dengan mengirimkan email palsu untuk mencuri data disebut ...",
+      "opsi": [
+        "Sniffing",
+        "Phishing",
+        "Spoofing",
+        "Hijacking",
+        "Cracking"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Port default untuk protokol HTTPS adalah ...",
+      "opsi": [
+        "21",
+        "22",
+        "80",
+        "443",
+        "110"
+      ],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "Software antivirus berfungsi untuk ...",
+      "opsi": [
+        "Menghapus semua file di komputer",
+        "Melindungi dari malware dan virus",
+        "Mengatur alamat IP",
+        "Membatasi akses internet",
+        "Mempercepat koneksi"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Teknik brute force digunakan untuk ...",
+      "opsi": [
+        "Menebak kata sandi dengan mencoba banyak kombinasi",
+        "Menghapus sistem operasi",
+        "Mempercepat kinerja server",
+        "Mengubah alamat IP",
+        "Mengirim spam email"
+      ],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Fungsi backup data dalam keamanan jaringan adalah ...",
+      "opsi": [
+        "Menghemat kapasitas penyimpanan",
+        "Menyimpan cadangan data jika data utama rusak/hilang",
+        "Menghapus data lama",
+        "Mempercepat transfer data",
+        "Menyembunyikan data dari administrator"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Protokol yang paling sering digunakan dalam VoIP untuk pengiriman suara adalah ...",
+      "opsi": [
+        "HTTP",
+        "FTP",
+        "SIP",
+        "SMTP",
+        "POP3"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Perangkat keras yang dibutuhkan untuk menggunakan VoIP adalah ...",
+      "opsi": [
+        "Monitor dan printer",
+        "Modem, speaker, dan mikrofon",
+        "Kamera dan proyektor",
+        "Scanner dan switch",
+        "USB flashdisk"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Teknologi yang digunakan untuk mengubah suara analog menjadi digital dalam VoIP disebut ...",
+      "opsi": [
+        "Codec",
+        "Firewall",
+        "Proxy",
+        "Cache",
+        "VPN"
+      ],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Apa perbedaan utama antara VoIP dan telepon PSTN?",
+      "opsi": [
+        "VoIP menggunakan kabel tembaga, PSTN menggunakan internet",
+        "VoIP berbasis IP, PSTN berbasis sirkuit switch",
+        "PSTN lebih murah dibanding VoIP",
+        "VoIP hanya bisa digunakan di kantor",
+        "VoIP tidak memerlukan perangkat jaringan"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Komponen jaringan yang berfungsi sebagai penghubung VoIP ke jaringan telepon konvensional adalah ...",
+      "opsi": [
+        "Switch",
+        "Router",
+        "Gateway",
+        "Hub",
+        "Proxy server"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Perhatikan gambar di samping, gateway dari PC yang menuju internet adalah ....<br><img src='soal/img/kk-tkj/g31.png'>",
+      "opsi": [
+        "192.168.50.2",
+        "192.168.60.2",
+        "192.168.40.1",
+        "192.168.60.1",
+        "192.168.50.1"
+      ],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "Untuk menerjemahkan nama domain ke IP address dibutuhkan ....",
+      "opsi": [
+        "DHCP server",
+        "DNS server",
+        "FTP server",
+        "Proxy server",
+        "Web server"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Untuk menggunakan masquerade pada Firewall NAT, Anda perlu menentukan?",
+      "opsi": [
+        "action = accept, out-interface, chain = src-nat",
+        "action = masquerade, out-interface, chain = src-nat",
+        "action = masquerade, in-interface, chain = src-nat",
+        "action = masquerade, out-interface, chain = dst-nat",
+        "action = masquerade, out-interface list, chain = src-nat"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Pada gambar dibawah ini<br><img src='soal/img/kk-tkj/g34.png'><br>yang berlaku sebagai dhcp server pada topologi tersebut adalah ether ....",
+      "opsi": [
+        "eth1",
+        "eth2",
+        "eth4",
+        "eth5",
+        "eth6"
+      ],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "Perhatikan gambar dibawah ini.<br><img src='soal/img/kk-tkj/g35.png'><br>Sebuah PC client dihubungkan ke ether2 pada mikrotik dan dikonfigurasi IP Address seperti pada gambar diatas. Pada IP ether 2 mikrotik di setting IP Address 192.168.2.1/24 Namun terjadi kendala dimana PC tersebut tidak dapat terkoneksi ke internet. Kemungkinan penyebab dari masalah terbut adalah",
+      "opsi": [
+        "IP Address salah",
+        "Subnet Mask salah",
+        "Preferred DNS tidak diisi",
+        "Default gateway tidak diisi",
+        "Alternate DNS tidak diisi"
+      ],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "Saat melakukan konfigurasi beberapa Access Point (AP), seorang network administrator harus memperhatikan aspek kecepatan dan frekuensi. Frekuensi menentukan jumlah kanal (channel) yang tersedia Bila AP tersebut dipasang pada standar 802.11n, interval kanal sebesar 10 MHz, serta lebar kanal sebesar 20 MHz. Maka manakah konfigurasi kanal berikut ini yang harus dihindari oleh admin agar memperoleh interferensi paling minimum?",
+      "opsi": [
+        "2, 4, 5",
+        "1, 7, 13",
+        "1,8",
+        "2, 5, 8",
+        "2, 6, 12"
+      ],
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Anda memiliki router dengan konfigurasi<br>- IP Publik: 20.168.12.45/24<br>- Default gateway: 20.168.12.1<br>- Server DNS: 8.8.8.8, 8.8.4.4<br>- IP Lokal: 100.168.2.1/24<br>pilih konfigurasi yang benar pada PC klien untuk mengakses Internet",
+      "opsi": [
+        "IP: 100.168.0.1/24 gateway: 192.168.2.1",
+        "IP: 100.168.2.253/24 gateway: 202.168.0.1",
+        "IP: 100.168.1.223/24 gateway: 248.115.148.136",
+        "IP: 100.168.2.115/24 gateway: 192.168.2.1",
+        "IP: 100.168.2.2/24 gateway: 202.168.125.45"
+      ],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "Cara mengakses Router Mikrotik dibawah ini kecuali ...",
+      "opsi": [
+        "Telnet",
+        "Winbox",
+        "Komputer",
+        "SSH",
+        "Web Based"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Untuk mengakses mikrotik dalam mode text kita perlu menggunakan fitur SSH atau Telnet, makan untuk melanjukannya kita memerlukan aplikasi client seperti PuTTY dan aplikasi lainnya. Hal yang perlu diketahui sebelum melakukan proses remote adalah ..",
+      "opsi": [
+        "DNS Server",
+        "Mail Server",
+        "IP Address",
+        "Mac Address",
+        "Subnetmask"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Pada sebuah topologi jaringan dikonfigurasi ip router 10.10.10.1/24 tersambung ke switch dan dikonfigurasi ip router 192.168.1.2/24 yang tersambung dengan modem berapakah ip gateway dari client yang tersambung dengan switch ...",
+      "opsi": [
+        "10.10.10.1",
+        "192.168.1.1",
+        "10.10.10.2",
+        "192.168.1.2",
+        "Semua jawaban salah"
+      ],
+      "jawaban": "A"
+    }
+  ],
+  "essay": [
+    {
+      "pertanyaan": "Jelaskan langkah-langkah untuk melakukan konfigurasi IP statis pada sistem operasi Linux Debian!"
+    },
+    {
+      "pertanyaan": "Apa perbedaan antara virus, worm, dan trojan?"
+    },
+    {
+      "pertanyaan": "Menurut kamu, apa tantangan terbesar dalam menjaga keamanan jaringan di era cloud computing saat ini?"
+    },
+    {
+      "pertanyaan": "Jelaskan secara singkat Sejarah teknologi VoIP di Indonesia !"
+    },
+    {
+      "pertanyaan": "Untuk menerjemahkan nama domain ke IP address dibutuhkan ...."
+    }
+  ]
+}

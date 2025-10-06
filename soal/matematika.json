@@ -97,7 +97,7 @@
         "18",
         "$18\\frac{1}{2}$"
       ],
-      "jawaban": "B"
+      "jawaban": "E"
     },
     {
       "pertanyaan": "Himpunan penyelesaian dari pertidaksamaan $2(x - 3) < 4(2x + 6)$ adalah ...",
@@ -141,7 +141,7 @@
         "38",
         "42"
       ],
-      "jawaban": "D"
+      "jawaban": "E"
     },
     {
       "pertanyaan": "Diketahui barisan aritmatika 5,8,11,14, ... ,155. Banyak suku barisan tersebut adalah ...",
@@ -207,7 +207,7 @@
         "$\\frac{1}{4}$",
         "$\\frac{1}{2}$"
       ],
-      "jawaban": "B"
+      "jawaban": "E"
     },
     {
       "pertanyaan": "Nilai $\\lim_{x \\rightarrow 4} \\frac{\\sqrt{9 + x^{2}}}{x - 3} = \\ldots$",
@@ -273,7 +273,7 @@
         "600",
         "640"
       ],
-      "jawaban": "B"
+      "jawaban": "A"
     },
     {
       "pertanyaan": "Diberikan fungsi $f(x) = 2x^{3} - 3x^{2} + 2x - 3.$ Nilai dari turunan fungsi tersebut untuk $x=1$ adalah ...",
@@ -295,7 +295,7 @@
         "29",
         "33"
       ],
-      "jawaban": "B"
+      "jawaban": "A"
     },
     {
       "pertanyaan": "Hasil dari $\\int \\left( \\frac{6}{x^{2}} - 4x + 10x^{4} \\right) dx = \\ldots$",
@@ -348,4 +348,5 @@
       "pertanyaan": "Nilai dari $\\int_{1}^{2} \\left( \\frac{2}{x^{3}} - \\frac{1}{x^{2}} \\right) dx = \\ldots$"
     }
   ]
+
 }

@@ -3,22 +3,22 @@
     {
       "pertanyaan": "Perhatikan ayat di bawah ini! <img src='soal/img/pabp/g1.png'> Potongan ayat yang benar untuk melengkapi ayat di atas adalah...",
       "opsi": ["<img src='soal/img/pabp/g1a.png'>", "<img src='soal/img/pabp/g1b.png'>", "<img src='soal/img/pabp/g1c.png'>", "<img src='soal/img/pabp/g1d.png'>", "<img src='soal/img/pabp/g1e.png'>"],
-      "jawaban": ""
+      "jawaban": "C"
     },
     {
       "pertanyaan": "Potongan ayat yang benar untuk melengkapi ayat di atas adalah....",
       "opsi": ["<img src='soal/img/pabp/g1a.png' width='300'>", "<img src='soal/img/pabp/g1b.png'>", "<img src='soal/img/pabp/g1c.png'>", "<img src='soal/img/pabp/g1d.png'>", "<img src='soal/img/pabp/g1e.png'>"],
-      "jawaban": ""
+      "jawaban": "C"
     },
     {
       "pertanyaan": "Dalam rangka mengatasi masalah keamanan, Ketua RT memanggil tokoh masyarakat untuk bermusyawarah. Hal ini sesuai dengan kutipan ayat berikut ini.",
       "opsi": ["<img src='soal/img/pabp/g3a.png'>", "<img src='soal/img/pabp/g3b.png'>", "<img src='soal/img/pabp/g3c.png'>", "<img src='soal/img/pabp/g3d.png'>", "<img src='soal/img/pabp/g3e.png'>"],
-      "jawaban": ""
+      "jawaban": "B"
     },
     {
       "pertanyaan": "Perhatikan tabel berikut ini. <img src='soal/img/pabp/g4.png'> Pasangan lafadz dan hukum tajwid yang tepat adalah....",
       "opsi": ["5 -- d", "4 -- e", "3 -- a", "2 -- c", "1 -- b"],
-      "jawaban": ""
+      "jawaban": "C"
     },
     {
       "pertanyaan": "Greenpeace adalah salah satu organisasi internasional yang peduli dengan kelestarian lingkungan. Sejalan dengan organisasi tersebut, upaya sederhana yang dapat dilakukan untuk menjaga kelestarian lingkungan adalah ....",
@@ -34,7 +34,7 @@
     {
       "pertanyaan": "Perhatikan lafadz berikut ini. <img src='soal/img/pabp/g6.png'> Pasangan lafadz dan arti yang tepat adalah....",
       "opsi": ["5 -- d", "4 -- e", "3 -- a", "2 -- c", "1 -- b"],
-      "jawaban": ""
+      "jawaban": "E"
     },
     {
       "pertanyaan": "Perhatikan QS. Al-Jumu'ah ayat 10 berikut ini! <img src='soal/img/pabp/g7.jpg'> Kandungan kutipan ayat tersebut adalah ....",
@@ -45,7 +45,7 @@
         "Kapal berlayar di lautan membawa muatan",
         "Kewajiban berpuasa sunah"
       ],
-      "jawaban": "C"
+      "jawaban": "A"
     },
     {
       "pertanyaan": "Demi mendapatkan keuntungan sebanyak-banyaknya, Rizal terlalu bersemangat dalam bekerja sebagai supir angkot, sampai-sampai ia melupakan salat Jum'at yang merupakan kewajiban seorang muslim. Dari wacana tersebut, etos kerja yang sesuai dengan QS. Al-Jumu'ah 10 di atas adalah ....",

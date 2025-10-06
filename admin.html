@@ -88,7 +88,7 @@
 
     /* ==================== BAGIAN TOKEN ==================== */
     function generateToken(site) {
-      let now = Math.floor(Date.now() / (1000 * 60 * 10));
+      let now = Math.floor(Date.now() / (1000 * 60 * 5));
       let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
       let token = "";
       for (let i = 0; i < 5; i++) {
@@ -103,7 +103,7 @@
       document.getElementById("token2").innerText = generateToken(2);
 
       let now = Date.now();
-      let nextChange = Math.ceil(now / (1000*60*10)) * (1000*60*10);
+      let nextChange = Math.ceil(now / (1000*60*5)) * (1000*60*5);
       let remaining = nextChange - now;
       let minutes = Math.floor(remaining / 60000);
       let seconds = Math.floor((remaining % 60000) / 1000);
@@ -117,4 +117,5 @@
   </script>
 </body>
 </html>
+
 

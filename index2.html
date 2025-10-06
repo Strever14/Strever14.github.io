@@ -118,8 +118,23 @@
       transform: translateY(-2px);
     }
 
+    .modal-btn-ok {
+      background: #2196F3;
+      color: white;
+    }
+
+    .modal-btn-ok:hover {
+      background: #0b7dda;
+      transform: translateY(-2px);
+    }
+
     .modal-btn:active {
       transform: translateY(0);
+    }
+
+    /* Success modal specific styles */
+    .success-modal .modal-icon {
+      color: #4CAF50;
     }
   </style>
 
@@ -146,6 +161,21 @@
         <div class="modal-buttons">
           <button class="modal-btn modal-btn-cancel" onclick="hideConfirmationModal()">Batal</button>
           <button class="modal-btn modal-btn-confirm" onclick="submitForm()">Ya, Kirim</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Berhasil Submit -->
+    <div id="successModal" class="modal-overlay">
+      <div class="modal-content success-modal">
+        <div class="modal-icon">✅</div>
+        <div class="modal-title">Berhasil!</div>
+        <div class="modal-message">
+          Jawaban Anda telah berhasil dikirim.<br>
+          Terima kasih telah mengerjakan soal.
+        </div>
+        <div class="modal-buttons">
+          <button class="modal-btn modal-btn-ok" onclick="goToLogin()">OK</button>
         </div>
       </div>
     </div>
@@ -182,14 +212,14 @@
 
         let html = `<h2>${mapel.replace("_", " ").toUpperCase()}</h2>`;
         html += `<input type="hidden" name="mapel" value="${mapel.replace("_", " ").toUpperCase()}">`;
-        html += "<strong>Nama : </strong>";
-          html += `<input type="Nama" name="nama" placeholder="Nama Lengkap" required><br>`;
-          html += "<strong>Kelas : </strong>";
-        html += `<input type="Kelas" name="kelas" placeholder="Kelas" required>`;
+        html += "<lable>Nama : </lable>";
+        html += `<input type="Nama" name="nama" placeholder="Nama Lengkap" required><br>`;
+        html += "<lable>Kelas : </lable>";
+        html += '<select name="kelas" id="status" class="form-select"><option value="XII TJKT 1" selected>XII TJKT 1</option><option value="XII TJKT 2">XII TJKT 2</option><option value="XII TJKT 3">XII TJKT 3</option><option value="XII AKL">XII AKL</option></select>';
         
         // Pilihan Ganda
         html += "<h3>Pilihan Ganda</h3><ol>";
-          data.pilihan_ganda.slice(0,40).forEach((q,i) => {
+          data.pilihan_ganda.slice(0,35).forEach((q,i) => {
             html += `<li><div class="question-container"><div class="soal-text">${q.pertanyaan}</div></div>`;
             const abjad = ["A", "B", "C", "D", "E"];
             let nilai;
@@ -296,6 +326,21 @@
           const modal = document.getElementById('confirmationModal');
           modal.style.display = 'none';
         }
+
+        function showSuccessModal() {
+          const modal = document.getElementById('successModal');
+          modal.style.display = 'flex';
+        }
+      
+        function hideSuccessModal() {
+          const modal = document.getElementById('successModal');
+          modal.style.display = 'none';
+        }
+
+        function goToLogin() {
+          localStorage.removeItem("isLoggedIn1");
+          window.location.href = "login.html";
+        }
       
         function submitForm() {
           const form = document.getElementById('my-form');
@@ -308,8 +353,7 @@
           })
           .then(() => {
             hideConfirmationModal();
-            //alert("Jawaban berhasil dikirim!");
-            logout();
+            showSuccessModal();
           })
           .catch(error => {
             console.error("Error:", error);
@@ -329,6 +373,5 @@
   </script>
 </body>
 </html>
-
 
 

@@ -124,7 +124,7 @@
       .catch(error => console.error("Error:", error));
 
     function generateToken(site) {
-      let now = Math.floor(Date.now() / (1000 * 60 * 10));
+      let now = Math.floor(Date.now() / (1000 * 60 * 5));
       let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
       let token = "";
       for (let i = 0; i < 5; i++) {
@@ -158,4 +158,5 @@
   </script>
 </body>
 </html>
+
 

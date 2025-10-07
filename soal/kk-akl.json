@@ -3,27 +3,27 @@
     {
       "pertanyaan": "Kegiatan bank umum untuk menyimpan dana dari masyarakat. Kegiatan menghimpun dana dikenal juga dengan istilah.....",
       "opsi": ["Lending", "Funding", "Other service", "Transfer", "Clearing"],
-      "jawaban": "Funding"
+      "jawaban": "B"
     },
     {
       "pertanyaan": "Rumus yang dituliskan dengan tanda $ didepan baris atau kolom adalah fungsi dari rumus...",
       "opsi": ["Semiabsolut", "Absolut", "Logika", "Statistic", "Accounting"],
-      "jawaban": "Absolut"
+      "jawaban": "B"
     },
     {
       "pertanyaan": "Cara penulisan rumus pada spreadsheet yang benar adalah .....",
       "opsi": ["=SUM(A1A5)", "=SUM(A1/A5)", "=SUM(A1-A5)", "=SUM(A1&A5)", "=SUM(A1:A5)"],
-      "jawaban": "=SUM(A1:A5)"
+      "jawaban": "E"
     },
     {
       "pertanyaan": "Perusahaan yang kegiatan bisnisnya membeli barang untuk di jual Kembali kepada pelanggan tanpa mengubah Kembali bentuk fisik barang tersebut di sebut...",
       "opsi": ["Perusahaan Jasa", "Perusahaan Dagang", "Industri Manufaktur", "Industri ekstratif", "Industri Agraris"],
-      "jawaban": "Perusahaan Dagang"
+      "jawaban": "B"
     },
     {
       "pertanyaan": "Jurnal khusus yang di pakai untuk mencatat transaksi penjualan barang dagangan secara kredit",
       "opsi": ["Jurnal Penjualan", "Jurnal Pembelian", "Jurnal Penerimaan Kas", "Jurnal Umum", "Jurnal Pengeluaran Kas"],
-      "jawaban": "Jurnal Penjualan"
+      "jawaban": "A"
     },
     {
       "pertanyaan": "Pengiriman Kembali atas barang dagangan yang di beli karena rusak kepada penjual seharga Rp. 400.000,00 di catat dalam jurnal umum sebagai berikut....",
@@ -34,7 +34,7 @@
         "Pembelian debit, utang kredit masing -- masing Rp. 400.000,00",
         "Retur Pembelian kredit, pembelian kredit masing -- masing Rp. 400.000,00"
       ],
-      "jawaban": "Utang debit, retur pembelian kredit masing -- masing Rp.400.000,00"
+      "jawaban": "C"
     },
     {
       "pertanyaan": "Akun yang di gunakan untuk mencatat harga beli atau harga pokok barang dagang yang di jual pada periode akuntansi adalah akun...",
@@ -44,12 +44,12 @@
     {
       "pertanyaan": "Berikut adalah Buku besar pembantu piutang PD sumber rezeki periode 31 Maret 2022.<br><table border='1' cellpadding='5' cellspacing='0'><tr><th rowspan='2'>TANGGAL</th><th rowspan='2'>KETERANGAN</th><th rowspan='2'>REF</th><th colspan='2'>JUMLAH</th><th colspan='2'>SALDO</th></tr><tr><th>DEBET</th><th>KREDIT</th><th>DEBET</th><th>KREDIT</th></tr><tr><td>2022 Maret 8</td><td>Penjualan</td><td></td><td>Rp 19.500.000</td><td></td><td>Rp 19.500.000</td><td></td></tr><tr><td>Maret 9</td><td>Retur</td><td></td><td></td><td>Rp 500.000</td><td>Rp 19.000.000</td><td></td></tr><tr><td>Maret 13</td><td>Pembayaran</td><td></td><td></td><td>Rp 19.000.000</td><td>-</td><td></td></tr><tr><td>Maret 20</td><td>Penjualan</td><td></td><td>Rp 12.500.000</td><td></td><td>Rp 12.500.000</td><td></td></tr><tr><td>Maret 23</td><td>Pembayaran</td><td></td><td></td><td>Rp 12.500.000</td><td>-</td><td></td></tr><tr><td>Maret 27</td><td>Penjualan</td><td></td><td>Rp 15.000.000</td><td></td><td>Rp 15.000.000</td><td></td></tr><tr><td>Maret 27</td><td>Retur</td><td></td><td></td><td>Rp 2.000.000</td><td>Rp 13.000.000</td><td></td></tr></table><br>Jumlah saldo piutang dagang tanggal 31 Maret 2022 Untuk debitur Toko Lancar adalah....",
       "opsi": ["RP. 19.500.000,00", "RP. 19.000.000,00", "RP. 15.000.000,00", "RP. 13.000.000,00", "RP. 12.500.000,00"],
-      "jawaban": "RP. 13.000.000,00"
+      "jawaban": "D"
     },
     {
       "pertanyaan": "Berikut merupakan wajib pajak PPh Pasal 21, kecuali .....",
       "opsi": ["Pegawai", "Penerima uang pesangon", "Dokter", "Pejabat perwakilan diplomatik dari negara asing", "Konsultan"],
-      "jawaban": "Pejabat perwakilan diplomatik dari negara asing"
+      "jawaban": "D"
     },
     {
       "pertanyaan": "Dibawah ini merupakan fungsi dari SSP, kecuali .....",
@@ -60,12 +60,12 @@
         "Sebagai laporan pembayaran pajak",
         "Untuk penyetoran atau pembayaran pajak"
       ],
-      "jawaban": "Untuk mengetahui kekurangan bayar pajak"
+      "jawaban": "B"
     },
     {
       "pertanyaan": "Di bawah ini yang bukan termasuk pelaku kegiatan ekonomi adalah ...",
       "opsi": ["konsumen", "Pemerintah", "Masyarakat luar negri", "Produsen", "Distributor"],
-      "jawaban": "Masyarakat luar negri"
+      "jawaban": "B"
     },
     {
       "pertanyaan": "Langkah-langkah menyusun linked accounts untuk sales account adalah.....",
@@ -76,17 +76,17 @@
         "Klik setup > klik linked accounts > pilih payroll accounts",
         "Klik setup > klik linked accounts > pilih balance"
       ],
-      "jawaban": "Klik setup > klik linked accounts > pilih sales accounts"
+      "jawaban": "E"
     },
     {
       "pertanyaan": "Apabila sudah selesai mengentri transaksi pada tampilan di atas, maka untuk menyimpan transaksi tersebut dengan mengklik......",
       "opsi": ["Cancel", "Record", "Journal", "Print", "Register"],
-      "jawaban": "Record"
+      "jawaban": "B"
     },
     {
       "pertanyaan": "Semua bentuk pengeluaran yang berasal dari rekening desa dan merupakan kewajiban desa dalam satu tahun anggaran yang tidak adkan diperoleh pembayarannya kembali oleh desa serta digunakan dalam rangka untuk kegiatan pendanaan penyelenggaraan keweangan desa disebut.....",
       "opsi": ["Akun belanja desa", "Akun pembiayaan desa", "Akun pendapatan desa", "Akun aset", "Akun beban"],
-      "jawaban": "Akun belanja desa"
+      "jawaban": "B"
     },
     {
       "pertanyaan": "Proses pencatatan transaksi pendapatan desa dan belanja pemerintah desa, yang didukung dengan bukti-bukti transaksi kemudiandilakukan penggolongan, pengikhtisaran, dan menganalisis laporan keuangan sehingga menghasilkan informasi keuangan desa yang akan digunakan oleh pihak-pihak yang berhubungan dan bekerja sama dengan desa disebut.....",
@@ -97,12 +97,12 @@
         "Elemen dasar akuntansi desa",
         "Akun akun pokok dalam akuntansi desa"
       ],
-      "jawaban": "Akuntansi keuangan desa"
+      "jawaban": "A"
     },
     {
       "pertanyaan": "Formulir penting yang digunakan wajib pajak untuk melakukan penyetoran dan pembayaran pajak, disebut dengan .....",
       "opsi": ["Surat Pemberitahuan", "Surat Ketetapan", "Surat Ketetapan Pajak", "Surat Setoran Pajak", "Surat Kelebihan Bayar"],
-      "jawaban": "Surat Setoran Pajak"
+      "jawaban": "B"
     },
     {
       "pertanyaan": "Pada tanggal 15 Juli 2022, Toko Sangkuriang membayar iklan kepada Harian Suara merdeka untuk Bulan Juli Rp. 420.000,00. Pengaruh transaksi terhadap akun adalah....",
@@ -113,22 +113,22 @@
         "Kas berkurang di catat di sisi debit (D) Rp.420.000,00",
         "Beban iklan berkurang di catat di sisi kredit (K) Rp.420.000,00"
       ],
-      "jawaban": "Kas berkurang di catat di sisi debit (D) Rp.420.000,00"
+      "jawaban": "D"
     },
     {
       "pertanyaan": "Pembelian barang dagangan yang di beli dengan syarat pembayaran 2/10,n/30 di catat dalam jurnal....",
       "opsi": ["Jurnal Penjualan", "Jurnal Pembelian", "Jurnal Penerimaan Kas", "Jurnal Umum", "Jurnal Pengeluaran Kas"],
-      "jawaban": "Jurnal Pembelian"
+      "jawaban": "D"
     },
     {
       "pertanyaan": "Objek PPh adalah .....",
       "opsi": ["Pajak pribadi", "Pajak harta warisan belum dibagi", "Penghasilan", "Pajak badan", "Bentuk usaha tetap"],
-      "jawaban": "Penghasilan"
+      "jawaban": "B"
     },
     {
       "pertanyaan": "Jurnal khusus yang di pakai untuk mencatat seluruh penerimaan kas dari segala sumber penerimaan adalah...",
       "opsi": ["Jurnal Penjualan", "Jurnal Pembelian", "Jurnal Penerimaan Kas", "Jurnal Umum", "Jurnal Pengeluaran Kas"],
-      "jawaban": "Jurnal Penerimaan Kas"
+      "jawaban": "C"
     },
     {
       "pertanyaan": "Di bawah ini merupakan fungsi NPWP, kecuali .....",
@@ -139,12 +139,12 @@
         "Dicantumkan dalam setiap dokumen negara",
         "Sebagai pengenal di kantor pajak"
       ],
-      "jawaban": "Dicantumkan dalam setiap dokumen negara"
+      "jawaban": "C"
     },
     {
       "pertanyaan": "Pajak merupakan sebagian harta kekayaan rakyat, hal ini selaras dengan ....",
       "opsi": ["Fungsi pajak", "Sifat pajak", "Karakteristik pajak", "Pengertian pajak", "Jenis-jenis pajak"],
-      "jawaban": "Pengertian pajak"
+      "jawaban": "E"
     },
     {
       "pertanyaan": "Berikut ini pernyataan yang benar tentang pajak, adalah.....",
@@ -155,32 +155,32 @@
         "Iuran yang diatur dengan undang-undang dan bersifat sukarela",
         "Iuran wajib kepada negara sesuai UU dan tidak mendapatkan balas jasa secara langsung"
       ],
-      "jawaban": "Iuran wajib kepada negara sesuai UU dan tidak mendapatkan balas jasa secara langsung"
+      "jawaban": "C"
     },
     {
       "pertanyaan": "Ada berapa faktor yang mempengaruhi masalah ekonomi",
       "opsi": ["4", "6", "8", "7", "5"],
-      "jawaban": "5"
+      "jawaban": "E"
     },
     {
       "pertanyaan": "Ketika menghadapi masalah ekonomi, setiap orang menerapkan prinsip ekonomi, entah itu disadari ataupun tidak disadari, istilah teknis bagi penerapan prinsip ekonomi ialah...?",
       "opsi": ["Efisien", "Modifikasi", "Optimalisasi", "Devisiasi", "Intimasi"],
-      "jawaban": "Optimalisasi"
+      "jawaban": "E"
     },
     {
       "pertanyaan": "Menyalurkan barang/jasa hasil produksi kepada konsumen, pengertian dari...?",
       "opsi": ["Konsumsi", "Inflasi", "Produksi", "Distribusi", "Kualitas"],
-      "jawaban": "Distribusi"
+      "jawaban": "D"
     },
     {
       "pertanyaan": "Tempat wajib pajak harus mendaftarkan diri untuk membuat NPWP adalah ....",
       "opsi": ["Dirjen Pajak", "Kementrian Keuangan", "Kantor Samsat", "Kantor Pelayanan Pajak (KPP)", "Kantor Pelayanan Keuangan dan Lelang Negara"],
-      "jawaban": "Kantor Pelayanan Pajak (KPP)"
+      "jawaban": "D"
     },
     {
       "pertanyaan": "Tiga masalah ekonomi adalah",
       "opsi": ["Produksi,distribusi, kontribusi", "Kontribusi,distribusi,konsumsi", "Produksi, distribusi,konsumsi", "Konsumsi, ekonomi. Pasar", "Distribusi, ekonomi, kontribusi"],
-      "jawaban": "Produksi, distribusi,konsumsi"
+      "jawaban": "D"
     },
     {
       "pertanyaan": "Yang termasuk kedalam ciri ekonomi.klasik yaitu....",
@@ -191,22 +191,22 @@
         "Sistem perekonomian terbatas",
         "Perekonomian ditentukan tingkat pendidikan"
       ],
-      "jawaban": "Perekonomian memiliki sistem bebas berusaha"
+      "jawaban": "C"
     },
     {
       "pertanyaan": "Salah satu faktor penyebab dari kelangkaan adalah... . . . .",
       "opsi": ["Jumlahnya yang terbatas", "Sumber daya alam", "Harga mengalami kenaikan", "Sumber daya tenaga kerja", "Tngkat konsumsi masyarakat"],
-      "jawaban": "Jumlahnya yang terbatas"
+      "jawaban": "A"
     },
     {
       "pertanyaan": "Masalah ekonomi klasik meliputi produksi, distribusi, dan konsumsi, sedangkan masalah ekonomi modern meliputi.... . . .",
       "opsi": ["What, how, where", "Trere, how, forwhom", "What, who, how", "What, there, how", "What, how forwhom"],
-      "jawaban": "What, how forwhom"
+      "jawaban": "A"
     },
     {
       "pertanyaan": "Laporan keuangan yang melaporkan mengenai aktivitas operasional perusahaan dengan memperhitungkan pendapatan dan beban -- beban selama satu periode disebut laporan...",
       "opsi": ["Neraca lajur", "Neraca saldo", "Jurnal penyesuaian", "Laporan laba rugi", "Laporan posisi keuangan"],
-      "jawaban": "Laporan laba rugi"
+      "jawaban": "C"
     },
     {
       "pertanyaan": "Urutan siklus akuntansi umum yang benar adalah......",
@@ -217,17 +217,72 @@
         "Transaksi - jurnal - buku besar - neraca saldo -- laporan",
         "Transaksi - buku besar - jurnal - laporan - neraca saldo"
       ],
-      "jawaban": "Transaksi - jurnal - buku besar - neraca saldo -- laporan"
+      "jawaban": "D"
     },
     {
       "pertanyaan": "Pada tanggal 31 Desember 2022 masih harus dibayar Beban Listrik Rp. 1.500.000,00, air Rp. 400.000,00 dan telepon sebesar Rp. 2.600.000,00. jumlah Beban terutang nya adalah....",
       "opsi": ["Rp. 1.500.000,00", "Rp. 1.900.000,00", "Rp. 2.600.000,00", "Rp. 3.000.000,00", "Rp. 4.500.000,00"],
-      "jawaban": "Rp. 4.500.000,00"
+      "jawaban": "E"
     },
     {
       "pertanyaan": "Suatu sistem akuntansi yang di dalamnya terdapat proses pencatatan, penggolongan, penafsiran, peringkasan transaksi atau kejadian keuangan dan laporan keuangan dalam wujud melaksanakan APBD, yang dilakukan dalam berbagai prinsi akuntansi yang sudah diterima secara umum disebut.....",
       "opsi": ["Sistem Akuntansi Pemerintah Daerah", "Sistem akuntansi", "Sistem", "Akuntansi", "Akuntansi daerah"],
-      "jawaban": "Sistem Akuntansi Pemerintah Daerah"
+      "jawaban": "A"
+    },
+    {
+      "pertanyaan": "Berdasarkan tabel di atas tentukan rumus untuk menentukan nama barang dengan kode barang M105 dengan tepat.....<br><img src='soal/img/kk-akl/g36.jpg'>",
+      "opsi": [
+        "=VLOOKUP(A10;A19:D24;1;0)",
+        "=VLOOKUP(A8;A$19:D$24;2;0)",
+        "=VLOOKUP(A12;A$19:D$24;2;0)",
+        "=VLOOKUP(A10;A$19:D$24;2;0)",
+        "=VLOOKUP(A10;A$19:D$24;1;0)"
+      ],
+      "jawaban": "D"
+    },
+    {
+      "pertanyaan": "Berdasarkan tabel di atas tentukan rumus untuk penyusutan tahun pertama......<br><img src='soal/img/kk-akl/g37.jpg'>",
+      "opsi": [
+        "=SLN($D$5;$D$7;$D$6;B10)",
+        "=VDB($D$5;$D$7;$D$6;B10)",
+        "=DB($D$5;$D$7;$D$6;B10)",
+        "=DDB($D$5;$D$7;$D$6;B10)",
+        "=SYD($D$5;$D$7;$D$6;B10)"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Menggunakan metode saldo menurun tunggal, seorang akuntan ingin menghitung penyusutan tahun pertama. Rumus Excel yang digunakan adalah ...<br><img src='soal/img/kk-akl/g38.jpg'>",
+      "opsi": [
+        "=VDB($B$1;$B$2;$B$3;A6-1;A6;1,5)",
+        "=DDB($B$1;$B$2;$B$3;A6)",
+        "=DB($B$1;$B$2;$B$3;A6)",
+        "=SYD($B$1;$B$2;$B$3;A6)",
+        "=SLN($B$1;$B$2;$B$3)"
+      ],
+      "jawaban": "C"
+    },
+    {
+      "pertanyaan": "Seorang akuntan ingin menghitung penyusutan dengan metode saldo menurun ganda untuk tahun pertama. Rumus Excel yang tepat adalah ...<br><img src='soal/img/kk-akl/g39.jpg'>",
+      "opsi": [
+        "=VDB($B$1;$B$2;$B$3;A6-1;A6;1,5)",
+        "=DDB($B$1;$B$2;$B$3;A6)",
+        "=DB($B$1;$B$2;$B$3;A6)",
+        "=SYD($B$1;$B$2;$B$3;A6)",
+        "=SLN($B$1;$B$2;$B$3)"
+      ],
+      "jawaban": "B"
+    },
+    {
+      "pertanyaan": "Dibawah ini yang merupakan pengertian kewirausahaan adalah...",
+      "opsi": [
+        "Kemampuan seseorang dalam memanajerial kegiatan usahanya",
+        "Orang yang berani dalam menjalankan usaha",
+        "Keinginan untuk membuat usaha sendiri",
+        "Orang yang berani berwirausaha",
+        "Kemampuan dalam melakukan kegiatan jual beli"
+      ],
+      "jawaban": "A"
     }
   ],
   "essay": [

@@ -141,15 +141,20 @@
 
       if (input === currentToken) {
         localStorage.setItem("isLoggedIn" + site, "true");
-        if  (mapel !== "bahasa_inggris" || site !== 1) {
-          if (site === 1){
-            window.location.href = "index1.html";
+        if(site === 1){
+           if  (mapel !== "bahasa_inggris") {
+            if (site === 1){
+              window.location.href = "index1.html";
+            }else{
+              window.location.href = "index2.html";
+            }
           }else{
-            window.location.href = "index2.html";
+            window.location.href = "inggris.html";
           }
         }else{
-          window.location.href = "inggris.html";
-        }  
+         
+          window.location.href = "index2.html";
+        }
           
       } else {
         document.getElementById("error").innerText = "❌ Token salah atau sudah kadaluarsa.";
@@ -158,6 +163,7 @@
   </script>
 </body>
 </html>
+
 
 
 

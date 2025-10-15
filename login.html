@@ -141,7 +141,7 @@
 
       if (input === currentToken) {
         localStorage.setItem("isLoggedIn" + site, "true");
-        if  (mapel !== "bahasa_inggris") {
+        if  (mapel !== "bahasa_inggris" && site === 1) {
           if (site === 1){
             window.location.href = "index1.html";
           }else{
@@ -158,5 +158,6 @@
   </script>
 </body>
 </html>
+
 
 
